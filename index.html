@@ -13,8 +13,8 @@
 <header>
     <h1>Page CV de Lorian Flamant</h1>
     <nav>
-        <h2>Navigation principale</h2>
-        <a href="#contenu" title="Accéder au contenu">Aller directement au contenu</a> <!--Lien d'évitement-->
+        <h2 class="hidden">Navigation principale</h2>
+        <a href="#contenu" class="hidden" title="Accéder au contenu">Aller directement au contenu</a> <!--Lien d'évitement-->
         <a>
             <img alt="Logo de Lorian Flamant" src=""> <!--Compléter et ajouter les attributs manquants-->
         </a>
@@ -27,7 +27,7 @@
             <li><a href="#" title="Ressources supplémentaires">Ressources</a></li>
         </ul>
         <a href="#" title="Mon numéro de téléphone">0492-10-83-29</a>
-        <div class="search">
+        <div class="toggle-search">
             <label for="search">Que recherchez vous ?</label>
             <input id="search" type="text" placeholder="Que rechercher vous ?">
         </div>
@@ -96,9 +96,9 @@
             </div>
         </div>
     </section>
-    <section class="languages">
+    <article class="languages">
         <h3>Les langages que je maitrise</h3>
-        <div class="container" id="html">
+        <section class="container" id="html">
             <h4 title="HyperText Markup Language"><abbr title="HyperText Markup Language">HTML</abbr></h4>
             <p>Le langage <abbr title="HyperText Markup Language">HTML</abbr> permet de créer la structure et le contenu
                 de nos pages web.</p>
@@ -109,8 +109,8 @@
                 <img src="img/html_logo.png" alt="Logo de HTML (HyperText Markup Language)">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
-        </div>
-        <div class="container" id="css">
+        </section>
+        <section class="container" id="css">
             <h4 title="Cascading Style Sheet"><abbr title="Cascading Style Sheet">CSS</abbr></h4>
             <p>Le langage <abbr title="Cascading Style Sheet">CSS</abbr> est utilisé pour rendre nos pages web
                 attractives.</p>
@@ -121,8 +121,8 @@
                 <img src="img/css_logo.svg" alt="Logo de CSS (Cascading Style Sheet)">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
-        </div>
-        <div class="container" id="javascript">
+        </section>
+        <section class="container" id="javascript">
             <h4 title="JavaScript">JavaScript</h4>
             <p>Le langage JavaScript est utilisé pour rendre nos pages web dynamique, interactives, etc.</p>
             <a href="#typescript" title="Passer au langage suivant">Voir le langage suivant</a>
@@ -132,8 +132,8 @@
                 <img src="img/javaScript_logo.webp" alt="Logo de JavaScript">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
-        </div>
-        <div class="container" id="typescript">
+        </section>
+        <section class="container" id="typescript">
             <h4 title="Typescript">Typescript</h4>
             <p>La langage TypeScript est un langage open source basé sur JavaScript.</p>
             <a href="#mysql" title="Passer au langage suivant">Voir le langage suivant</a>
@@ -143,8 +143,8 @@
                 <img src="img/typeScript_logo.png" alt="Logo de TypeScript">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
-        </div>
-        <div class="container" id="mysql">
+        </section>
+        <section class="container" id="mysql">
             <h4 title="MySQL"><abbr title="My Structured Query Language">MySQL</abbr></h4>
             <p>Le langage <abbr title="My Structured Query Language">MySQL</abbr> est permet de gérer des bases de
                 données</p>
@@ -155,8 +155,8 @@
                 <img src="img/mySQL_logo.png" alt="Logo de SQL (My Structured Query Language)">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
-        </div>
-        <div class="container" id="php">
+        </section>
+        <section class="container" id="php">
             <h4 title="PHP"><abbr title="Hypertext Preprocessor">PHP</abbr></h4>
             <p>Le langage <abbr title="Hypertext Preprocessor">PHP</abbr> permet de rendre le contenu des pages web
                 dynamique.</p>
@@ -166,12 +166,13 @@
                 <img src="img/php_logo.png" alt="Logo de PHP (Hypertext Preprocessor)">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
-        </div>
-    </section>
-    <section class="school-career">
+        </section>
+    </article>
+    <article class="school-career">
         <h3>Mon parcours scolaire</h3>
         <div>
-            <div>
+            <section>
+                <h4 class="hidden">Mon parcours secondaire</h4>
                 <p>
                     <strong>
                         <time datetime="2017">2017</time>
@@ -186,8 +187,9 @@
                     <img src="img/elcab_logo.png" alt="Logo de l'INDSE (Institut Notre Dame Séminaire)">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
-            </div>
-            <div>
+            </section>
+            <section>
+                <h4 class="hidden">Ma première année en supérieur</h4>
                 <p>
                     <strong>
                         <time datetime="2023">2023</time>
@@ -201,8 +203,9 @@
                     <img src="img/HEPL_logo.png" alt="Logo de la HEPL (Haute École de la Province de Liège)">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
-            </div>
-            <div>
+            </section>
+            <section>
+                <h4 class="hidden">Ma deuxième année en supérieur</h4>
                 <p>
                     <strong>
                         <time datetime="2024">2024</time>
@@ -214,13 +217,13 @@
                     <img src="img/HEPL_logo.png" alt="Logo de la HEPL (Haute École de la Province de Liège)">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
-            </div>
+            </section>
         </div>
         <div>
             <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
             <a href="#" title="En savoir plus sur moi">En savoir plus sur moi</a>
         </div>
-    </section>
+    </article>
     <section class="logiciels">  <!--Compléter et ajouter les attributs manquants-->
         <h3>Les logiciels que j’utilise</h3>
         <ul>
@@ -318,6 +321,7 @@
     </section>
     <section class="opinion">
         <h3>Avis de mes clients</h3>
+        
     </section>
     <section id="contact">
         <h3>Envie de me contacter ?</h3>
