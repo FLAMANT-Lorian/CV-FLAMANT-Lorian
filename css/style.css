@@ -11,6 +11,33 @@
     --light_green: #F7FFE5;
 }
 
+/******HEADER******/
+
+.header{
+    display: flex;
+    flex-direction: row;
+    padding: 26px 30px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.header>a{
+    margin-left: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu>span{
+    background-color: var(--black);
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+}
+
 /******FIRST-SECTION******/
 
 body {
