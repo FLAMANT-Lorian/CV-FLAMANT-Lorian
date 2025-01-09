@@ -1,0 +1,152 @@
+/******VARIABLES******/
+
+:root {
+    /*COULEUR*/
+    --white: #FFFFFF;
+    --grey: #D4D2D0;
+    --black: #38312F;
+    --green3: #599D15;
+    --green4: #2E7918;
+    --red: #CE4755;
+    --light_green: #F7FFE5;
+}
+
+/******FIRST-SECTION******/
+
+body {
+    /*padding: 30px 30px 0;*/
+    color: var(--black);
+}
+
+.about-me{
+    background: linear-gradient(to bottom, var(--light_green), var(--white));
+    padding: 30px 30px 42px;
+}
+
+.starter{
+    text-align: center;
+}
+
+.starter > h2 {
+    color: var(--green3);
+    font-size: 3.0625em; /*49px*/
+    font-weight: 700;
+    line-height: 1.28571429em; /*63*/
+    text-align: center;
+    margin-bottom: 0.40816327em; /*20px*/
+}
+
+.starter > p {
+    font-size: 1.125em; /*18*/
+    font-weight: 500;
+    line-height: 1.55555556em; /*28*/
+    text-align: center;
+}
+
+.engagements {
+    margin: 30px 0 30px;
+}
+
+.engagements > li {
+    font-size: 1.125em; /*18*/
+    font-weight: 500;
+    line-height: 1.38888889em; /*25*/
+    text-align: left;
+    display: flex;
+}
+
+
+.engagements > li:before {
+    content: url("../img/puce.svg");
+    display: inline-block;
+    margin-right: 1.33333333em; /*24*/
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+.engagements > li:nth-of-type(1), .engagements > li:nth-of-type(2) {
+    margin-bottom: 0.88888889em; /*16*/
+}
+
+a.contact{
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1em; /*16*/
+    font-weight: 700;
+    line-height: 1.1875em; /*19*/
+    border-radius: 100px;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.first-part>figure{
+    margin: 30px auto 50px;
+}
+
+/******SECOND-SECTION******/
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card{
+    background-color: var(--white);
+    padding: 14px 30px;
+    border: 1px solid var(--grey);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.first:before{
+    content: url("../img/calendar.svg");
+    width: 74px;
+    height: 75px;
+    margin-right: 27px;
+}
+
+.second:before{
+    content: url("../img/hands.svg");
+    width: 37px;
+    height: 37px;
+    margin-right: 27px;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.informations>small{
+    font-size: 0.625em; /*10*/
+    font-weight: 700;
+    line-height: 1.3em; /*13*/
+    text-transform: uppercase;
+    letter-spacing: 1.31px;
+}
+
+.informations>p{
+    font-size: 0.875em; /*14*/
+    font-weight: 400;
+    line-height: 1.5em; /*21*/
+}
+
+.informations>a{
+    color: var(--green4);
+    font-size: 1em; /*16*/
+    font-weight: 700;
+    line-height: 1.3125em; /*21*/
+    text-decoration: none;
+    display: flex;
+    align-items: end;
+}
+
+.informations>a:after{
+    content: url("../img/arrow.svg");
+    height: 18px;
+    margin-left: 10px;
+    align-self: center;
+}
