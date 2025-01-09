@@ -13,30 +13,42 @@
 </head>
 <body>
 <header>
-    <h1>Page CV de Lorian Flamant</h1>
+    <h1 class="hidden">Page CV de Lorian Flamant</h1>
     <nav>
         <h2 class="hidden">Navigation principale</h2>
         <a href="#contenu" class="hidden" title="Accéder au contenu">Aller directement au contenu</a>
         <!--Lien d'évitement-->
-        <a>
-            <img alt="Logo de Lorian Flamant" src=""> <!--Compléter et ajouter les attributs manquants-->
-        </a>
-        <ul>
-            <li><a href="#" title="En savoir plus à propos de moi">À propos de moi</a></li>
-            <li><a href="#" title="Découvrir le matériel je j'utilise">Mon matériel</a></li>
-            <li><a href="#" title="Décourvir mes passions">Ce que j'aime faire</a></li>
-            <li><a href="#" title="Découvrir les langages que je maitrise">Les langages que je maîtrise</a></li>
-            <li><a href="#" title="Découvrir mes outils de travail">Mes outils de travail</a></li>
-            <li><a href="#" title="Ressources supplémentaires">Ressources</a></li>
-        </ul>
-        <a href="#" title="Mon numéro de téléphone">0492-10-83-29</a>
-        <div class="toggle-search">
-            <label for="search">Que recherchez vous&nbsp;?</label>
-            <input id="search" type="text" placeholder="Que rechercher vous ?">
+        <div class="header">
+            <div class="burger-menu">
+                <label for="toggle" class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="toggle">
+            </div>
+            <a>
+                <img alt="Logo de Lorian Flamant" src=""> <!--Compléter et ajouter les attributs manquants-->
+            </a>
         </div>
-        <div class="">
-            <a href="#" title="En savoir plus sur moi">En savoir plus sur moi</a>
-            <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
+        <div class="nav-bar">
+            <ul class="menu-links">
+                <li><a href="#" title="En savoir plus à propos de moi">À propos de moi</a></li>
+                <li><a href="#" title="Découvrir le matériel je j'utilise">Mon matériel</a></li>
+                <li><a href="#" title="Décourvir mes passions">Ce que j'aime faire</a></li>
+                <li><a href="#" title="Découvrir les langages que je maitrise">Les langages que je maîtrise</a></li>
+                <li><a href="#" title="Découvrir mes outils de travail">Mes outils de travail</a></li>
+                <li><a href="#" title="Ressources supplémentaires">Ressources</a></li>
+            </ul>
+            <a href="#" title="Mon numéro de téléphone">0492-10-83-29</a>
+            <div class="search">
+                <label for="search">Que recherchez vous&nbsp;?</label>
+                <input id="search" type="text" placeholder="Que rechercher vous ?">
+            </div>
+            <div class="contact-button">
+                <a href="#" title="En savoir plus sur moi">En savoir plus sur moi</a>
+                <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
+            </div>
         </div>
     </nav>
 </header>
