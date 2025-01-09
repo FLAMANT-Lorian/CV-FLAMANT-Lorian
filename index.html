@@ -8,6 +8,8 @@
           content="Adaptation d'une page web sous forme de CV dans le cadre du cours de Design Web à la Haute École de le Province de Liège">
     <meta name="keywords" content="CV, Lorian Flamant, Front-End, développement web">
     <title>CV Flamant Lorian</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
@@ -29,7 +31,7 @@
         </ul>
         <a href="#" title="Mon numéro de téléphone">0492-10-83-29</a>
         <div class="toggle-search">
-            <label for="search">Que recherchez vous &nbsp;?</label>
+            <label for="search">Que recherchez vous&nbsp;?</label>
             <input id="search" type="text" placeholder="Que rechercher vous ?">
         </div>
         <div class="">
@@ -42,21 +44,21 @@
     <article class="about-me">
         <h1 class="hidden">À propos de moi</h1>
         <section class="first-part">
-            <div>
+            <div class="starter">
                 <h2>Flamant Lorian, Développeur Web</h2>
-                <p>j'apprend les bonnes pratiques du web à la Haute École de la Province de Liège</p>
-                <ul>
+                <p>J'apprend les bonnes pratiques du web à la Haute École de la Province de Liège</p>
+                <ul class="engagements">
                     <li>
-                        <p>Site optimisé et performant</p>
+                        Site optimisé et performant
                     </li>
                     <li>
-                        <p>Respect des normes d'accessibilité</p>
+                        Respect des normes d'accessibilité
                     </li>
                     <li>
-                        <p>Code de qualité respectant les bonnes pratiques</p>
+                        Code de qualité respectant les bonnes pratiques
                     </li>
                 </ul>
-                <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
+                <a class="contact" href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
             </div>
             <figure>
                 <img src="" alt="Image réprésentant le métier de développeur Web">
@@ -77,54 +79,19 @@
                     <img src="" alt="">
                 </figure>
             </div>
-            <div>
+            <div class="cards">
                 <h4 class="hidden">Informations supplémentaires</h4>
-                <div>
-                    <svg width="78" height="76" viewBox="0 0 78 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M76.2542 21.0001H14.0282" stroke="#D4FD80" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M26.5376 74.4856H7.99999C4.68629 74.4856 2 71.7993 2 68.4856V14.7313C2 11.4176 4.68629 8.73132 8 8.73132H70.2542C73.5679 8.73132 76.2542 11.4176 76.2542 14.7313V68.4856C76.2542 71.7993 73.5679 74.4856 70.2542 74.4856H39.6884"
-                              stroke="#38312F" stroke-width="3" stroke-linecap="round"/>
-                        <circle cx="33.1933" cy="74.4054" r="1.44339" fill="#38312F"/>
-                        <circle cx="8.01419" cy="21.1605" r="1.44339" fill="#D4FD80"/>
-                        <rect x="18.4951" y="1.65118" width="5.8207" height="12.7169" rx="2.91035" fill="white"
-                              stroke="#38312F" stroke-width="3"/>
-                        <rect x="54.0988" y="1.65118" width="5.8207" height="12.7169" rx="2.91035" fill="white"
-                              stroke="#38312F" stroke-width="3"/>
-                        <rect x="9.75464" y="29.0755" width="58.9053" height="37.4148" stroke="#D4FD80"
-                              stroke-width="3"/>
-                        <path d="M21.2451 29.3397V66.2262" stroke="#D4FD80" stroke-width="3" stroke-linecap="square"/>
-                        <path d="M33.2734 29.3397V66.2262" stroke="#D4FD80" stroke-width="3" stroke-linecap="square"/>
-                        <path d="M45.3016 29.3397V66.2262" stroke="#D4FD80" stroke-width="3" stroke-linecap="square"/>
-                        <path d="M57.3298 29.3397V66.2262" stroke="#D4FD80" stroke-width="3" stroke-linecap="square"/>
-                        <path d="M67.9147 41.2075L9.69806 41.2075" stroke="#D4FD80" stroke-width="3"
-                              stroke-linecap="square"/>
-                        <path d="M67.9147 54.198L9.69806 54.198" stroke="#D4FD80" stroke-width="3"
-                              stroke-linecap="square"/>
-                    </svg>
+                <div class="card first">
                     <div class="informations">
-                        <small>Grande disponibilité &nbsp;!</small>
-                        <p>J’essaye d’être le plus souvent disponible afin de pouvoir collaborer avec vous &nbsp;!</p>
+                        <small>Grande disponibilité&nbsp;!</small>
+                        <p>J’essaye d’être le plus souvent disponible afin de pouvoir collaborer avec vous&nbsp;!</p>
                         <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
                     </div>
                 </div>
-                <div>
-                    <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_207_54)">
-                            <path d="M15.9994 33.9858C15.4585 33.7393 15.047 33.3586 14.8035 32.8792L14.589 32.4573L14.0244 32.4804C13.0555 32.5199 12.26 32.0364 11.8225 31.1424C11.5763 30.6393 11.5732 30.637 11.1459 30.635C10.0237 30.6296 8.98291 29.6653 8.84528 28.5035C8.79609 28.0884 8.76788 28.0459 8.50282 27.9888C7.73752 27.8237 7.02321 27.1978 6.73302 26.4381C6.49849 25.8239 6.56677 24.9387 6.88591 24.4565L7.12606 24.0936L6.45671 23.264C5.48593 22.0607 5.56057 22.0868 5.15523 22.8115C4.8697 23.3221 4.7412 23.4577 4.39947 23.6089C4.12296 23.7312 3.89648 23.771 3.71009 23.7301C3.41268 23.6648 0.653018 22.0309 0.32285 21.7247C0.213749 21.6234 0.0741116 21.3607 0.0125101 21.1409C-0.0853527 20.7916 -0.0766585 20.69 0.0810033 20.3366C0.18035 20.114 1.59008 17.5753 3.21399 14.6952C4.8379 11.8151 6.30594 9.19933 6.47643 8.88231C6.64692 8.56561 6.89291 8.22251 7.023 8.12019C7.32878 7.87972 7.81226 7.79151 8.16035 7.91281C8.6221 8.07375 11.2219 9.70476 11.4513 9.97725C11.7998 10.3915 11.8308 10.819 11.5555 11.4202C11.4254 11.7044 11.3189 11.9489 11.3189 11.9633C11.3189 12.0323 12.7943 12.8328 13.0799 12.9188C13.2583 12.9728 13.8616 13.0865 14.4206 13.1717L15.437 13.327L15.5766 13.1074C16.2587 12.0352 17.7872 11.6129 21.746 11.4031C23.1971 11.3263 24.5043 11.4666 26.5497 11.9197C27.4587 12.1208 28.4014 12.2856 28.6446 12.2856C29.0064 12.2856 29.6136 12.1549 29.7469 12.0486C29.7634 12.0352 29.6695 11.823 29.5381 11.5766C29.2358 11.0079 29.2252 10.4759 29.5083 10.0609C29.6467 9.85755 30.23 9.44394 31.246 8.82856C32.985 7.77518 33.3064 7.67721 33.8387 8.03898C34.1967 8.28199 34.2409 8.35472 36.7115 12.7489C37.643 14.4057 38.9833 16.7845 39.6899 18.0352C40.3966 19.2857 41.0006 20.4396 41.0326 20.5988C41.1094 20.9835 40.9395 21.4696 40.6282 21.7553C40.2851 22.0706 37.6541 23.6485 37.3552 23.7182C36.8223 23.8427 36.2128 23.486 35.8749 22.8514C35.5278 22.1995 35.5805 22.1943 34.796 22.9549C34.3984 23.3405 33.897 23.7717 33.6821 23.9129C33.2966 24.1661 33.293 24.1735 33.4272 24.4328C33.5018 24.5776 33.5624 24.9378 33.5613 25.2334C33.5564 26.4719 32.703 27.4252 31.4865 27.5508L31.009 27.6001L30.8467 28.1505C30.6323 28.8782 30.075 29.4525 29.3843 29.6576C29.1153 29.7375 28.8004 29.8028 28.684 29.8028C28.5135 29.8028 28.4527 29.8788 28.3688 30.1967C28.2136 30.7855 27.8488 31.3547 27.4639 31.6082C27.2527 31.7474 26.8553 31.8767 26.4265 31.9456C25.7468 32.0548 25.7202 32.0693 25.2401 32.5948C24.0173 33.933 22.4547 34.0965 19.5881 33.1862L18.8777 32.9607L18.4565 33.4166C18.2247 33.6672 17.8809 33.9369 17.6923 34.0156C17.233 34.2077 16.4558 34.194 15.9994 33.986V33.9858ZM17.5586 32.4674C18.4017 31.4306 18.919 30.6126 18.919 30.3165C18.919 29.8759 18.5671 29.4105 18.1147 29.2529C17.7748 29.1344 17.7085 29.1364 17.5035 29.2706C17.2569 29.4323 16.0212 31.0351 15.8447 31.4221C15.5806 32.002 16.1993 32.8614 16.8808 32.8614C17.1894 32.8614 17.2822 32.8075 17.5586 32.4674ZM23.3048 32.3913C23.4997 32.3372 23.8281 32.1402 24.0347 31.9536L24.4103 31.6142L22.3635 30.6237C20.5557 29.7489 20.3093 29.6034 20.2526 29.377C20.1701 29.0483 20.3695 28.6853 20.6914 28.5784C20.8978 28.5098 21.2677 28.6604 23.1477 29.5788C25.22 30.5914 25.3967 30.6605 25.9295 30.6659C26.6376 30.6731 26.9332 30.4993 27.0872 29.9845C27.1805 29.6741 27.177 29.5884 27.0679 29.4872C26.9957 29.4199 25.8934 28.769 24.6191 28.0407C23.3447 27.3124 22.2292 26.6538 22.1399 26.577C21.8838 26.3568 21.9297 25.8684 22.2286 25.6335C22.379 25.5152 22.5559 25.4554 22.6708 25.4842C22.776 25.5106 24.0213 26.2012 25.4385 27.0187C27.6913 28.3185 28.0656 28.5052 28.4196 28.5052C28.6422 28.5052 28.9312 28.4645 29.0618 28.4149C29.3926 28.2891 29.6804 27.7907 29.6494 27.3978C29.6245 27.0834 29.5783 27.0507 26.8344 25.405C25.3001 24.4849 23.9757 23.6747 23.8917 23.6048C23.6563 23.4089 23.6888 22.8042 23.9446 22.625C24.058 22.5457 24.2236 22.4807 24.3129 22.4807C24.402 22.4807 25.9004 23.3358 27.6428 24.3808C30.4976 26.0933 30.851 26.2808 31.2229 26.2808C31.5684 26.2808 31.6865 26.2297 31.9506 25.9657C32.2005 25.7157 32.2658 25.5762 32.2658 25.2911C32.2658 24.6868 32.0125 24.4248 29.7632 22.7026C26.7935 20.4286 24.6057 19.0039 21.5397 17.3474L20.2211 16.6349L19.5702 16.8325C19.2122 16.9413 18.919 17.0646 18.919 17.1064C18.919 17.2849 17.4612 18.7113 16.8918 19.0897C16.0475 19.6512 15.047 19.9783 14.1743 19.9783C12.9831 19.9783 12.4676 19.5058 12.4902 18.4345C12.5055 17.7035 12.7299 17.2146 13.7479 15.6933L14.5373 14.5134L14.2025 14.4558C12.5683 14.1755 12.268 14.0715 11.2016 13.4188C10.9077 13.2387 10.651 13.1082 10.6311 13.1286C10.546 13.2159 6.22123 20.9229 6.22123 20.9873C6.22123 21.0263 6.3299 21.1594 6.46265 21.2829C6.5955 21.4063 6.97805 21.852 7.31277 22.2733L7.92137 23.0392L8.11529 22.8571C8.6662 22.3395 9.68618 22.239 10.4624 22.6259C10.9042 22.8461 11.4118 23.3106 11.5345 23.6071C11.5749 23.7046 11.608 23.6975 11.6862 23.5747C12.172 22.8099 12.7306 22.4807 13.5426 22.4807C14.2231 22.4807 14.6032 22.6282 15.1155 23.091C15.5907 23.5204 15.8534 24.0164 15.9248 24.6188C15.9695 24.9962 16.0113 25.0759 16.1644 25.0759C16.4953 25.0759 17.1728 25.4812 17.541 25.8995C17.925 26.3358 18.1775 27.0087 18.1775 27.5952C18.1775 27.8521 18.2167 27.9491 18.3203 27.9491C18.558 27.9491 19.1571 28.2941 19.4799 28.6169C20.2509 29.3879 20.4423 30.6563 19.9095 31.4618L19.656 31.8447L19.8669 31.9245C20.1 32.0128 21.5207 32.3664 21.885 32.4269C22.344 32.5032 22.9577 32.4877 23.3048 32.3913ZM15.678 29.3857C16.838 27.7995 16.8957 27.6997 16.8501 27.3595C16.7636 26.7132 16.0403 26.199 15.4897 26.3924C15.2648 26.4715 13.0361 29.3971 12.8647 29.8384C12.6871 30.2956 13.1385 31.0292 13.6935 31.1848C14.1888 31.3238 14.4018 31.1308 15.678 29.3857ZM11.6102 29.2236C11.688 29.1598 12.2662 28.3987 12.8952 27.532C13.5241 26.6654 14.1775 25.7924 14.3471 25.5921C14.7126 25.1606 14.7513 24.743 14.4684 24.2851C14.2155 23.876 13.6279 23.6343 13.2874 23.7995C13.1481 23.8672 12.4201 24.7651 11.5793 25.9066C10.0064 28.042 9.9293 28.2104 10.2645 28.7776C10.5533 29.2665 11.2685 29.5036 11.6102 29.2236ZM9.39153 26.6283C9.70537 26.3813 10.5774 25.0416 10.5771 24.8072C10.5767 24.5038 10.2861 24.02 9.98645 23.8236C9.84755 23.7326 9.6179 23.685 9.40277 23.7027C9.07833 23.7295 8.99881 23.7974 8.46889 24.5008C7.97894 25.1511 7.88956 25.3279 7.88956 25.6472C7.88956 25.962 7.94925 26.0842 8.24941 26.3844C8.52741 26.6624 8.68147 26.7442 8.92682 26.7442C9.10155 26.7442 9.31063 26.6921 9.39153 26.6283ZM32.89 22.8747C33.096 22.7344 33.6302 22.2719 34.0775 21.8466C34.8902 21.0743 34.8908 21.0736 34.7464 20.8271C34.6668 20.6917 33.675 18.9333 32.5424 16.9197C31.4097 14.9061 30.4762 13.2504 30.4681 13.2407C30.4599 13.2307 30.1443 13.3036 29.7667 13.4028C28.8984 13.6307 28.2651 13.6278 27.2144 13.3908C23.9712 12.6593 23.3499 12.5925 21.1619 12.7407C19.3933 12.8604 17.7753 13.1028 17.2429 13.3278C16.972 13.4421 16.6784 13.7998 15.6546 15.2633C14.1076 17.4747 13.8544 17.8889 13.7698 18.3465L13.703 18.7073L14.3655 18.66C15.5378 18.5761 16.7236 17.8036 17.7722 16.4411C18.1821 15.9083 18.1928 15.9018 19.2241 15.573L20.2629 15.2417L21.2826 15.7538C24.4747 17.3577 28.079 19.695 31.2924 22.2442C31.9042 22.7296 32.4297 23.1273 32.4601 23.1281C32.4907 23.1288 32.6842 23.0148 32.89 22.8747ZM4.25984 21.7624C4.45991 21.4183 5.02037 20.4279 5.50512 19.5611C5.98988 18.6945 7.28775 16.3833 8.38926 14.4247C9.49077 12.4663 10.3921 10.839 10.3921 10.8087C10.3921 10.7783 9.81288 10.3939 9.10505 9.95477L7.8181 9.15597L5.56481 13.1536C2.10336 19.2949 1.3089 20.7209 1.30975 20.7926C1.31038 20.8586 3.70638 22.3684 3.83053 22.3812C3.86648 22.3849 4.05966 22.1066 4.25984 21.7624ZM38.4801 21.6232C39.1861 21.2027 39.7556 20.8352 39.7452 20.8065C39.6448 20.5234 33.219 9.22679 33.1585 9.22679C33.0952 9.22679 31.3944 10.2452 30.7045 10.6963C30.5826 10.7761 30.8564 11.279 36.1789 20.743C36.6878 21.6476 37.1249 22.388 37.1504 22.388C37.1759 22.388 37.7744 22.0439 38.4801 21.6232Z"
-                                  fill="black"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_207_54">
-                                <rect width="41" height="41" fill="white" transform="translate(0 0.5)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-
-                    <div class="informations">
-                        <small>ENVIE DE COLLABORER AVEC MOI &nbsp;?</small>
-                        <p>Je suis prêt à collaborer afin de réaliser votre projet &nbsp;!</p>
-                        <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
-                    </div>
+                <div class="card second">
+                    <div class="informations"><small>ENVIE DE COLLABORER AVEC MOI&nbsp;?</small>
+                        <p>Je suis prêt à collaborer afin de réaliser votre projet&nbsp;!</p>
+                        <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a></div>
                 </div>
             </div>
         </section>
@@ -140,7 +107,7 @@
                     <abbr title="HyperText Markup Language">HTML</abbr>
                     div</a>
                 <figure>
-                    <img src="img/html_logo.png" alt="Logo de HTML (HyperText Markup Language)">
+                    <img src="img/image_mobile/HTML_logo.png" alt="Logo de HTML (HyperText Markup Language)">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
             </div>
@@ -154,7 +121,7 @@
                     sur
                     <abbr title="Cascading Style Sheet">CSS</abbr></a>
                 <figure>
-                    <img src="img/css_logo.svg" alt="Logo de CSS (Cascading Style Sheet)">
+                    <img src="img/image_mobile/CSS_logo.png" alt="Logo de CSS (Cascading Style Sheet)">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
             </div>
@@ -166,7 +133,7 @@
                     savoir
                     plus sur JavaScript</a>
                 <figure>
-                    <img src="img/javaScript_logo.webp" alt="Logo de JavaScript">
+                    <img src="img/image_mobile/JAVASCRIPT_logo.png" alt="Logo de JavaScript">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
             </div>
@@ -177,7 +144,7 @@
                 <a href="https://www.typescriptlang.org/" title="Aller vers le site de MDN">En savoir plus sur
                     TypeScript</a>
                 <figure>
-                    <img src="img/typeScript_logo.png" alt="Logo de TypeScript">
+                    <img src="img/image_mobile/TYPESCRIPT_logo.png" alt="Logo de TypeScript">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
             </div>
@@ -190,7 +157,7 @@
                 <a href="https://www.mysql.com/fr/" title="Aller vers le site de MySQL">En savoir plus sur <abbr
                         title="My Structured Query Language">MySQL</abbr></a>
                 <figure>
-                    <img src="img/mySQL_logo.png" alt="Logo de SQL (My Structured Query Language)">
+                    <img src="img/image_mobile/MYSQL_logo.png" alt="Logo de SQL (My Structured Query Language)">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
             </div>
@@ -202,7 +169,7 @@
                 <a href="https://www.php.net/" title="Aller vers le site de PHP">En savoir plus sur <abbr
                         title="Hypertext Preprocessor">PHP</abbr></a>
                 <figure>
-                    <img src="img/php_logo.png" alt="Logo de PHP (Hypertext Preprocessor)">
+                    <img src="img/image_mobile/PHP_logo.png" alt="Logo de PHP (Hypertext Preprocessor)">
                     <!--Compléter et ajouter les attributs manquants-->
                 </figure>
             </div>
@@ -223,7 +190,7 @@
                 naturelles/biotechniques
             </p>
             <figure>
-                <img src="img/elcab_logo.png" alt="Logo de l'INDSE (Institut Notre Dame Séminaire)">
+                <img src="img/image_mobile/INDSE_logo.png" alt="Logo de l'INDSE (Institut Notre Dame Séminaire)">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
         </article>
@@ -239,7 +206,7 @@
                 Haute école de la Province de Liège, Techniques infographique <abbr title="Bloc 1">(B1)</abbr>
             </p>
             <figure>
-                <img src="img/HEPL_logo.png" alt="Logo de la HEPL (Haute École de la Province de Liège)">
+                <img src="img/image_mobile/HEPL_logo.png" alt="Logo de la HEPL (Haute École de la Province de Liège)">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
         </article>
@@ -253,7 +220,7 @@
                 Haute école de la Province de Liège, Techniques infographique <abbr title="Bloc 2">(B2)</abbr>
             </p>
             <figure>
-                <img src="img/HEPL_logo.png" alt="Logo de la HEPL (Haute École de la Province de Liège)">
+                <img src="img/image_mobile/HEPL_logo.png" alt="Logo de la HEPL (Haute École de la Province de Liège)">
                 <!--Compléter et ajouter les attributs manquants-->
             </figure>
         </article>
@@ -263,7 +230,7 @@
             <a href="#" title="En savoir plus sur moi">En savoir plus sur moi</a>
         </section>
     </section>
-    <section class="logiciels">  <!--Compléter et ajouter les attributs manquants-->
+    <!--<section class="logiciels">  &lt;!&ndash;Compléter et ajouter les attributs manquants&ndash;&gt;
         <h3>Les logiciels que j’utilise</h3>
         <ul>
             <li>
@@ -357,7 +324,7 @@
                 </figure>
             </li>
         </ul>
-    </section>
+    </section>-->
     <section class="opinion">
         <h3>Avis de mes clients</h3>
         <section class="commentaires">
@@ -622,7 +589,7 @@
                     </p>
                     <p>
                         <label for="message">Message &nbsp;*</label>
-                        <textarea id="message" cols="50" rows="20" placeholder="Taper votre message içi ..."
+                        <textarea id="message" placeholder="Taper votre message içi ..."
                                   maxlength="2500"></textarea>
                     </p>
                 </div>
