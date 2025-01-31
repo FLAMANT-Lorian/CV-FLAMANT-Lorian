@@ -10,6 +10,7 @@
     <title>CV Flamant Lorian</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
 </head>
 <body>
 <header>
@@ -18,20 +19,16 @@
         <h2 class="hidden">Navigation principale</h2>
         <a href="#contenu" class="hidden" title="Accéder au contenu">Aller directement au contenu</a>
         <!--Lien d'évitement-->
-        <div class="header">
-            <div class="burger-menu">
-                <label for="toggle" class="menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                <input type="checkbox" id="toggle">
-            </div>
-            <a>
-                <img alt="Logo de Lorian Flamant" src=""> <!--Compléter et ajouter les attributs manquants-->
-            </a>
-        </div>
-        <div class="nav-bar">
+        <label for="toggle" class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <input type="checkbox" id="toggle">
+        <a>
+            <img alt="Logo de Lorian Flamant" src=""> <!--Compléter et ajouter les attributs manquants-->
+        </a>
+        <div class="container">
             <ul class="menu-links">
                 <li><a href="#" title="En savoir plus à propos de moi">À propos de moi</a></li>
                 <li><a href="#" title="Découvrir le matériel je j'utilise">Mon matériel</a></li>
@@ -40,18 +37,17 @@
                 <li><a href="#" title="Découvrir mes outils de travail">Mes outils de travail</a></li>
                 <li><a href="#" title="Ressources supplémentaires">Ressources</a></li>
             </ul>
-            <a href="#" title="Mon numéro de téléphone">0492-10-83-29</a>
-            <div class="search">
+            <div>
+                <a href="#" title="Mon numéro de téléphone">0492-10-83-29</a>
                 <label for="search">Que recherchez vous&nbsp;?</label>
                 <input id="search" type="text" placeholder="Que rechercher vous ?">
-            </div>
-            <div class="contact-button">
                 <a href="#" title="En savoir plus sur moi">En savoir plus sur moi</a>
                 <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
             </div>
         </div>
     </nav>
 </header>
+
 <main id="contenu">
     <article class="about-me">
         <h1 class="hidden">À propos de moi</h1>
@@ -82,44 +78,48 @@
             <!--Trouver le contenu à mettre dans cette section-->
             <div>
                 <h4>Les langages que je maîtrise</h4>
-                <figure> <!--Compléter et ajouter les attributs manquants dans toutes les balise imgs-->
-                    <figcaption><abbr title="HyperText Markup Language">HTML</abbr></figcaption>
-                    <img src="img/image_mobile/HTML_logo.png" alt="Logo du langage HTML">
-                </figure>
-                <figure>
-                    <figcaption><abbr title="Cascading Style Sheet">CSS</abbr></figcaption>
-                    <img src="img/image_mobile/CSS_logo.png" alt="Logo du langage CSS">
-                </figure>
-                <figure>
-                    <figcaption>JavaScript</figcaption>
-                    <img src="img/image_mobile/JAVASCRIPT_logo.png" alt="Logo du langage JavaScript">
-                </figure>
-                <figure>
-                    <figcaption>TypeScript</figcaption>
-                    <img src="img/image_mobile/TYPESCRIPT_logo.png" alt="Logo du langage TypeScript">
-                </figure>
-                <figure>
-                    <figcaption><abbr title="My Structured Query Language">MySQL</abbr></figcaption>
-                    <img src="img/image_mobile/MYSQL_logo.png" alt="Logo du langage MySQL">
-                </figure>
-                <figure>
-                    <figcaption><abbr title="Hypertext Preprocessor">PHP</abbr></figcaption>
-                    <img src="img/image_mobile/PHP_logo.png" alt="Logo du langage PHP">
-                </figure>
-            </div>
-            <div class="cards">
-                <h4 class="hidden">Informations supplémentaires</h4>
-                <div class="card first">
-                    <div class="informations">
-                        <small>Grande disponibilité&nbsp;!</small>
-                        <p>J’essaye d’être le plus souvent disponible afin de pouvoir collaborer avec vous&nbsp;!</p>
-                        <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a>
-                    </div>
+                <div class="language-grid">
+                    <figure class="html">
+                        <!--Compléter et ajouter les attributs manquants dans toutes les balise imgs-->
+                        <figcaption><abbr title="HyperText Markup Language">HTML</abbr></figcaption>
+                        <img src="img/image_mobile/HTML_logo.png" alt="Logo du langage HTML">
+                    </figure>
+                    <figure class="css">
+                        <figcaption><abbr title="Cascading Style Sheet">CSS</abbr></figcaption>
+                        <img src="img/image_mobile/CSS_logo.png" alt="Logo du langage CSS">
+                    </figure>
+                    <figure class="js">
+                        <figcaption>JavaScript</figcaption>
+                        <img src="img/image_mobile/JAVASCRIPT_logo.png" alt="Logo du langage JavaScript">
+                    </figure>
+                    <figure class="ts">
+                        <figcaption>TypeScript</figcaption>
+                        <img src="img/image_mobile/TYPESCRIPT_logo.png" alt="Logo du langage TypeScript">
+                    </figure>
+                    <figure class="mysql">
+                        <figcaption><abbr title="My Structured Query Language">MySQL</abbr></figcaption>
+                        <img src="img/image_mobile/MYSQL_logo.png" alt="Logo du langage MySQL">
+                    </figure>
+                    <figure class="php">
+                        <figcaption><abbr title="Hypertext Preprocessor">PHP</abbr></figcaption>
+                        <img src="img/image_mobile/PHP_logo.png" alt="Logo du langage PHP">
+                    </figure>
                 </div>
-                <div class="card second">
-                    <div class="informations"><small>ENVIE DE COLLABORER AVEC MOI&nbsp;?</small>
-                        <p>Je suis prêt à collaborer afin de réaliser votre projet&nbsp;!</p>
-                        <a href="#contact" title="Contactez-moi dès maintenant">Me contacter</a></div>
+                <div class="cards">
+                    <h4 class="hidden">Informations supplémentaires</h4>
+                    <div class="card first-card">
+                        <div class="informations">
+                            <small>Grande disponibilité&nbsp;!</small>
+                            <p>J’essaye d’être le plus souvent disponible afin de pouvoir collaborer avec
+                                vous&nbsp;!</p>
+                            <a href="#contact" title="Contactez-moi dès maintenant">Me Contacter</a>
+                        </div>
+                    </div>
+                    <div class="card second-card">
+                        <div class="informations"><small>ENVIE DE COLLABORER AVEC MOI&nbsp;?</small>
+                            <p>Je suis prêt à collaborer afin de réaliser votre projet&nbsp;!</p>
+                            <a href="#contact" title="Contactez-moi dès maintenant">Me Contacter</a></div>
+                    </div>
                 </div>
             </div>
         </section>
