@@ -1,0 +1,14 @@
+{
+  "name": "cv-flamant-lorian",
+  "version": "1.0.0",
+  "description": "Ce projet est réalisé dans le cadre du cours de Design Web dans le bachelier en infographie option Web/Multimédia proposé par la HEPL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lorian",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.84.0"
+  }
+}
