@@ -152,3 +152,9 @@ Temporary Items
 .idea/php.xml
 .idea/modules.xml
 .idea/CV-FLAMANT-Lorian.iml
+.idea/watcherTasks.xml
+
+# Autre
+node_modules
+package-lock.json
+dist
