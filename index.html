@@ -7,6 +7,7 @@
     <meta name="keywords" content="CV, HEPL, Web, FLAMANT Lorian, développement web">
     <meta name="author" content="Lorian Flamant">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/sass/app.scss">
     <title>CV de Lorian Flamant</title>
 </head>
 <body>
@@ -225,8 +226,7 @@
                 <a href="#" title="Me contacter" class="btn__small red__button">Me contacter</a>
             </div>
             <figure>
-                <img src="" srcset="" sizes="" alt="Image représentant le métier de développeur web">
-                <!--Image à faire quand je rentre au kot !!-->
+                <img src="img/bureau/bureau_600.jpg" srcset="img/bureau/bureau_600.jpg 600w, img/bureau/bureau_450.jpg 450w, img/bureau/bureau_350.jpg 350w, img/bureau/bureau_300.jpg 300w" sizes="(max-width: 400px) 300px, (max-width: 500px) 350px, (max-width: 800px) 450px, 600px" alt="Photo de mon bureau">
             </figure>
         </section>
         <section class="second__section__article">
@@ -252,7 +252,7 @@
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="hidden">JavaScript</h4>
+                    <h4 class="hidden"><abbr title="JavaScript">JS</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M38.0167 0.408791C37.8525 0.229943 37.6218 0.127991 37.379 0.127991H3.62083C3.37805 0.127991 3.14736 0.229943 2.9832 0.408791C2.81904 0.587639 2.73869 0.827831 2.76029 1.06889L5.80157 35.1338C5.83354 35.4898 6.08151 35.7896 6.42538 35.8881L20.258 39.8392C20.3349 39.8608 20.4153 39.872 20.4948 39.872C20.5742 39.872 20.6546 39.8608 20.7315 39.8392L34.5762 35.8881C34.9201 35.7896 35.1681 35.4898 35.2 35.1338L38.2396 1.06889C38.2612 0.827831 38.18 0.587639 38.0167 0.408791ZM9.26794 23.4594L15.3159 25.1373V7.90399H18.7719V30.368L9.26794 27.7319V23.4594ZM31.7786 17.408L30.8679 27.992L22.2279 30.368V26.3927L28.0599 24.79L28.2759 21.55L22.2279 22.592V7.90399H32.5959L32.2979 11.36H25.6839V18.272L31.7786 17.408Z" fill="black"/>
                     </svg>
@@ -303,8 +303,8 @@
             <h3 class="hidden">Informations supplémentaires</h3>
             <div class="card">
                 <div class="card__informations">
-                    <small>Grande disponibilité</small>
-                    <p>J’essaye d’être le plus souvent disponible afin de pouvoir collaborer avec vous&nbsp;!</p>
+                    <small>Disponibilité flexible !</small>
+                    <p>Je fais en sorte d’être disponible au maximum pour travailler avec vous&nbsp;!</p>
                     <a href="#" title="Me contacter">Me contacter</a>
                 </div>
             </div>
@@ -320,7 +320,7 @@
             <h3>Mes engagements</h3>
             <div class="engagements__container" id="first__engagement">
                 <h4>Site optimisé et performant</h4>
-                <p>Je veille à ce que votre site internet se comporte de manière fluide.</p>
+                <p>Je m'engage à optimiser votre site pour une navigation fluide tout en appliquant les meilleures pratiques en matière de SEO.</p>
                 <div class="btn__container">
                     <a href="#second__engagement" title="Passer à l’engagement suivant"
                        class="btn__medium filled__button">Voir l’engagement suivant</a>
@@ -328,15 +328,14 @@
                        class="btn__medium filled__button">En savoir plus</a>
                 </div>
                 <figure>
-                    <img src=""
+                    <img src="./img/engagements/optimisation_200.jpg"
                          alt="Illustration représentant l’optimisation en général. L’illustration contient des graphiques ainsi que des personnages qui travaillent."
                          sizes="" srcset="">
                 </figure>
             </div>
             <div class="engagements__container" id="second__engagement">
                 <h4>Respect des normes d’accessibilité</h4>
-                <p>Je veille à ce que votre site internet soit utilisable pour tous, y compris pour les personnes en
-                    situation de handicap.</p>
+                <p>L'accessibilité est un point très important dans une site internet pour garantir aux personnes en situation de handicap d’utiliser votre site sans difficulté.</p>
                 <div class="btn__container">
                     <a href="#third__engagement" title="Passer à l’engagement suivant"
                        class="btn__medium filled__button">Voir l’engagement suivant</a>
@@ -344,15 +343,14 @@
                        class="btn__medium unfilled__button">En savoir plus</a>
                 </div>
                 <figure>
-                    <img src=""
+                    <img src="./img/engagements/accessibilite_200.jpg"
                          alt="Illustration représentant l’accessibilité. On peut y retrouver un personnage atteinte d’un handicap moteur utilisant un ordinateur."
                          sizes="" srcset="">
                 </figure>
             </div>
             <div class="engagements__container" id="third__engagement">
                 <h4>Code de qualité respectant les bonnes pratiques</h4>
-                <p>Je veille à ce que le code de votre site soit le plus propre possible tout en respectant les
-                    nouvelles pratiques associé à l’univers du web.</p>
+                <p>Je veille à ce que le code de votre site soit le plus propre possible tout en respectant les nouvelles pratiques associé à l’univers du web.</p>
                 <div class="btn__container">
                     <a href="#fourth__engagement" title="Passer à l’engagement suivant"
                        class="btn__medium filled__button">Voir l’engagement suivant</a>
@@ -360,21 +358,20 @@
                         savoir plus</a>
                 </div>
                 <figure>
-                    <img src=""
+                    <img src="./img/engagements/code_quality_200.jpg"
                          alt="Illustration représentant une analyse de code. On peut y retrouver un personnage réfléhissant à la manière dont il va écrire son code."
                          sizes="" srcset="">
                 </figure>
             </div>
             <div class="engagements__container" id="fourth__engagement">
                 <h4>Respect des conventions du Design</h4>
-                <p>Je veille à ce que le design de votre site soit cohérent, contienne des informations claires et
-                    compréhensibles, tout en respectant les conventions qui y sont associées.</p>
+                <p>Mon objectif est de garantir un design cohérent, avec des informations claires et compréhensibles, tout en respectant les standards du web.</p>
                 <div class="btn_container">
                     <a href="#" title="En savoir plus sur les conventions du design"
                        class="btn__medium unfilled__button">En savoir plus</a>
                 </div>
                 <figure>
-                    <img src=""
+                    <img src="./img/engagements/design_conventions_200.jpg"
                          alt="Illustration représentant une liste de tâche accomplie. On peut y retrouver un personnage avec un crayon à côté d'une liste de tâche."
                          sizes="" srcset="">
                 </figure>
@@ -383,17 +380,15 @@
     </article>
     <section class="second__main__section">
         <h3>Mon parcours scolaire</h3>
-        <div class="school__carer__container">
+        <div class="school_carer__container">
             <p>
                 <strong>
-                    <time datetime="2017">2017</time>
-                    -
-                    <time datetime="2023">2023</time>&nbsp;:</strong> <abbr
-                    title="Institut Notre Dame Séminaire">INDSE</abbr> Bastogne, option sciences
-                naturelles/biotechniques.
+                    <time datetime="2024">2024</time>
+                    - Aujourd'hui&nbsp;:</strong> Haute École de le Province de Liège, Techniques infographique option
+                web/multimedia <strong>(B2)</strong>.
             </p>
             <figure>
-                <img src="" alt="Logo de l'INDSE Bastogne" sizes="" srcset="">
+                <img src="./img/hepl_logo_130.png" sizes="" srcset="" alt="Logo de la Haute École de la Province de Liège">
             </figure>
         </div>
         <div class="school_carer__container">
@@ -405,18 +400,20 @@
                 infographique option web/multimedia <strong>(B1)</strong>.
             </p>
             <figure>
-                <img src="" sizes="" srcset="" alt="Logo de la Haute École de la Province de Liège">
+                <img src="./img/hepl_logo_130.png" sizes="" srcset="" alt="Logo de la Haute École de la Province de Liège">
             </figure>
         </div>
-        <div class="school_carer__container">
+        <div class="school__carer__container">
             <p>
                 <strong>
-                    <time datetime="2024">2024</time>
-                    - Aujourd'hui&nbsp;:</strong> Haute École de le Province de Liège, Techniques infographique option
-                web/multimedia <strong>(B2)</strong>.
+                    <time datetime="2017">2017</time>
+                    -
+                    <time datetime="2023">2023</time>&nbsp;:</strong> <abbr
+                    title="Institut Notre Dame Séminaire">INDSE</abbr> Bastogne, option sciences
+                naturelles/biotechniques.
             </p>
             <figure>
-                <img src="" sizes="" srcset="" alt="Logo de la Haute École de la Province de Liège">
+                <img src="./img/elcab_logo_130.png" alt="Logo de l'INDSE Bastogne" sizes="" srcset="">
             </figure>
         </div>
         <div class="btn__container">
@@ -577,7 +574,7 @@
                 </g>
                 <defs>
                     <linearGradient id="paint0_linear_408_2539" x1="17.0792" y1="33.6814" x2="19.6999" y2="24.907" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FF9700"/>
+                        <stop offset="0" stop-color="#FF9700"/>
                         <stop offset="0.53" stop-color="#F48E00"/>
                         <stop offset="1" stop-color="#D06F00"/>
                     </linearGradient>
@@ -897,9 +894,9 @@
                     </a>
                 </li>
             </ul>
-            <p class="copyright__sentence">© 2024 BambooHR LLC. Tous droits réservés. BambooHR® est une  marque déposée de Bamboo HR LLC</p>
+            <p class="copyright__sentence">© 2024 BambooHR LLC. Tous droits réservés. BambooHR® est une marque déposée de Bamboo HR LLC</p>
         </div>
-        <p>Ce site est une reproduction de la page d’accueil du site BambooHR dans le cadre de mes études supérieur afin de tester mes compétences.</p>
+        <p>Ce site est une reproduction de la page d’accueil du site BambooHR dans le cadre de mes études supérieures afin de tester mes compétences.</p>
     </section>
 </footer>
 </body>
