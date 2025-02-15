@@ -155,7 +155,5 @@ Temporary Items
 .idea/watcherTasks.xml
 
 # Autre
-node_modules
-package-lock.json
 dist
 .idea/
