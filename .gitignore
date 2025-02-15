@@ -157,3 +157,5 @@ Temporary Items
 # Autre
 dist
 .idea/
+node_modules
+package-lock.json
