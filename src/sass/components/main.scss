@@ -1,0 +1,52 @@
+@import "../variables/variable";
+
+body {
+  color: $black;
+  font-family: Inter, Lato, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $green_3;
+  font-family: 'Fields', Lato, georgia, serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em; /*48px*/
+  line-height: 1.29166667em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.9375em; /*31px*/
+  line-height: 1.29032258em;
+  font-weight: 700;
+}
+
+.first__main__article {
+  background: linear-gradient($extra_light_green, $white);
+}
+
+.home__container {
+  p {
+    font-size: 1.125em; /*18px*/
+    line-height: 1.55555556em;
+    font-weight: 500;
+    padding-top: 0.88888889em; /*16px*/
+  }
+}
+
+.engagements__item {
+  font-size: 1.125em; /*18px*/
+  line-height: 1.55555556em;
+  font-weight: 500;
+  display: flex;
+
+  &:before{
+    content: url("/img/icones/puce.svg");
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+  }
+}
