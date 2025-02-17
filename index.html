@@ -19,7 +19,6 @@
     <nav class="nav__bar">
         <h2 class="sr-only">Navigation principale</h2>
         <a href="#contenu" class="sr-only nav__skipping">Allez directement au contenu principal</a>
-        <input type="checkbox" id="burger__menu">
         <label for="burger__menu">
             <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 2H22" stroke="#38312F" stroke-width="3" stroke-linecap="round"/>
@@ -27,6 +26,7 @@
                 <path d="M2 20H22" stroke="#38312F" stroke-width="3" stroke-linecap="round"/>
             </svg>
         </label>
+        <input type="checkbox" id="burger__menu">
         <ul class="first__label main__nav__list">
             <li class="main__nav__item">
                 À propos de moi
@@ -36,8 +36,7 @@
                         <ul class="submenu__level3__nav__list">
                             <li class="submenu__level3__nav__item">Site optimisé et performant</li>
                             <li class="submenu__level3__nav__item">Respect des normes d'accessibilité</li>
-                            <li class="submenu__level3__nav__item">Code de quilité respectant les bonnes pratiques
-                            </li>
+                            <li class="submenu__level3__nav__item">Code de qualité respectant les bonnes pratiques</li>
                             <li class="submenu__level3__nav__item">Respect des conventions du design</li>
                         </ul>
                     </li>
@@ -219,25 +218,27 @@
             <div class="home__container">
                 <h2 itemprop="name">Flamant Lorian, <span itemprop="jobTitle">Développeur web</span></h2>
                 <p itemprop="description">J’apprend les bonnes pratiques du web à la Haute École de la Province de Liège.</p>
-                <ul class="engagements__list">
-                    <li class="engagements__item">Site optimisé et performant</li>
-                    <li class="engagements__item">Respect des normes d’accessibilité</li>
-                    <li class="engagements__item">Code de qualité respectant les bonnes pratiques</li>
+                <ul class="engagements__list__home">
+                    <li class="engagements__item__home">Site optimisé et performant</li>
+                    <li class="engagements__item__home">Respect des normes d’accessibilité</li>
+                    <li class="engagements__item__home">Code de qualité respectant les bonnes pratiques</li>
                 </ul>
-                <a href="#" title="Me contacter" class="btn__small red__button">Me contacter</a>
+                <div class="btn__container">
+                    <a href="#" title="Me contacter" class="btn btn__small red__button">Me contacter</a>
+                </div>
             </div>
             <figure>
-                <img src="img/bureau/bureau_600.jpg"
-                     srcset="img/bureau/bureau_600.jpg 600w, img/bureau/bureau_450.jpg 450w, img/bureau/bureau_350.jpg 350w, img/bureau/bureau_300.jpg 300w"
+                <img src="img/bureau/bureau-600.webp"
+                     srcset="img/bureau/bureau_600.webp 600w, img/bureau/bureau_450.webp 450w, img/bureau/bureau_350.webp 350w, img/bureau/bureau_300.webp 300w"
                      sizes="(max-width: 400px) 300px, (max-width: 500px) 350px, (max-width: 800px) 450px, 600px"
                      alt="Photo de mon bureau">
             </figure>
         </section>
         <section class="second__section__article" itemprop="knowsAbout" itemscope itemtype="https://schema.org/ComputerLanguage">
-            <h3 class="sr-only">Les langages que je maîtrise</h3>
+            <h3>Les langages que je maîtrise</h3>
             <ul class="languages__list">
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="Hypertext Markup Language" itemprop="name">HTML</abbr></h4>
+                    <h4><abbr title="Hypertext Markup Language" itemprop="name">HTML</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_407_1392)">
                             <path d="M38.019 0.399467C37.6998 0.0433067 37.2445 -0.159973 36.7674 -0.159973H4.23249C3.75537 -0.159973 3.30009 0.0433067 2.98089 0.399467C2.66169 0.755626 2.51049 1.23107 2.56257 1.70483L6.26193 35.0075C6.33585 35.6845 6.81465 36.2507 7.46985 36.4371L20.0362 40.0273C20.1874 40.071 20.3437 40.0928 20.4982 40.0928C20.6528 40.0928 20.809 40.071 20.9602 40.0273L33.5266 36.4371C34.1818 36.2507 34.659 35.6845 34.7346 35.0075L38.4356 1.70483C38.4894 1.23107 38.3382 0.755626 38.019 0.399467ZM29.9566 12.3224H14.9542L15.3104 16.593H29.5954L28.5236 29.2098L20.505 31.76L20.426 31.7348L12.4964 29.2064L12.063 24.0656H15.9471L16.1168 26.0631L20.547 27.0392L24.8998 26.0615L25.3618 20.6636H11.7706L10.719 8.24002H30.3061L29.9566 12.3224Z"
@@ -251,21 +252,21 @@
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="Cascading Style Sheet" itemprop="name">CSS</abbr></h4>
+                    <h4><abbr title="Cascading Style Sheet" itemprop="name">CSS</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.875 0.0499878L7.2 34.9625L20.5 39.95L33.8 34.9625L37.125 0.0499878H3.875ZM9.4145 5.03749H31.5595L31.1244 10.025L21.656 15.0125H25.6888H30.475H30.6796L29.8288 25.0005L29.8613 24.9875L29.4035 29.975L20.5 33.3L11.5803 29.975L11.0315 23.325H16.0548L16.3145 26.7052L20.5 28.1534L24.692 26.7344L25.2667 20H10.7425L10.3139 15.0125L20.1396 10.025H9.87558L9.4145 5.03749Z"
                               fill="black"/>
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="JavaScript" itemprop="name">JS</abbr></h4>
+                    <h4><abbr title="JavaScript" itemprop="name">JS</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M38.0167 0.408791C37.8525 0.229943 37.6218 0.127991 37.379 0.127991H3.62083C3.37805 0.127991 3.14736 0.229943 2.9832 0.408791C2.81904 0.587639 2.73869 0.827831 2.76029 1.06889L5.80157 35.1338C5.83354 35.4898 6.08151 35.7896 6.42538 35.8881L20.258 39.8392C20.3349 39.8608 20.4153 39.872 20.4948 39.872C20.5742 39.872 20.6546 39.8608 20.7315 39.8392L34.5762 35.8881C34.9201 35.7896 35.1681 35.4898 35.2 35.1338L38.2396 1.06889C38.2612 0.827831 38.18 0.587639 38.0167 0.408791ZM9.26794 23.4594L15.3159 25.1373V7.90399H18.7719V30.368L9.26794 27.7319V23.4594ZM31.7786 17.408L30.8679 27.992L22.2279 30.368V26.3927L28.0599 24.79L28.2759 21.55L22.2279 22.592V7.90399H32.5959L32.2979 11.36H25.6839V18.272L31.7786 17.408Z"
                               fill="black"/>
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only" itemprop="name">TypeScript</h4>
+                    <h4 itemprop="name">TypeScript</h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_407_1413)">
                             <path d="M39.0401 0.00799561H0.960057C0.433601 0.00799561 0.00805664 0.434492 0.00805664 0.959996V39.04C0.00805664 39.5655 0.433601 39.992 0.960057 39.992H39.0401C39.5665 39.992 39.9921 39.5655 39.9921 39.04V0.959996C39.9921 0.434492 39.5665 0.00799561 39.0401 0.00799561ZM23.8081 21.3756H19.0481V36.184H15.2401V21.3756H10.4801V18.096H23.8081V21.3756ZM24.8752 35.3386V31.3802C24.8752 31.3802 27.0372 33.01 29.6314 33.01C32.2256 33.01 32.1257 31.3136 32.1257 31.0813C32.1257 28.6194 24.7753 28.6194 24.7753 23.1654C24.7753 15.7484 35.4853 18.6748 35.4853 18.6748L35.352 22.201C35.352 22.201 33.5556 21.0034 31.5269 21.0034C29.4982 21.0034 28.7661 21.9678 28.7661 22.9988C28.7661 25.6596 36.1831 25.394 36.1831 30.749C36.1841 38.9972 24.8752 35.3386 24.8752 35.3386Z"
@@ -279,7 +280,7 @@
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="My Structured Query Language" itemprop="name">MySQL</abbr></h4>
+                    <h4><abbr title="My Structured Query Language" itemprop="name">MySQL</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_407_1420)">
                             <path d="M37.1666 30.0917V34.1883C37.1666 37.3967 29.4083 40 20.4999 40C11.5933 40 3.83325 37.3967 3.83325 34.1883V30.0917C7.86325 32.9883 15.5083 33.8517 20.4999 33.8517C25.5099 33.8517 33.1466 32.98 37.1666 30.0917ZM20.4999 24.41C15.4899 24.41 7.85325 23.5383 3.83325 20.65V24.7067C3.83325 27.9167 11.5933 30.5183 20.4999 30.5183C29.4083 30.5183 37.1666 27.915 37.1666 24.7067V20.65C33.1366 23.5467 25.4916 24.41 20.4999 24.41ZM20.4999 0C11.5933 0 3.83325 2.60333 3.83325 5.81333C3.83325 9.02333 11.5933 11.625 20.4999 11.625C29.4083 11.625 37.1666 9.02167 37.1666 5.81333C37.1666 2.60333 29.4083 0 20.4999 0ZM20.4999 14.9583C15.4899 14.9583 7.85325 14.0867 3.83325 11.1983V15.265C3.83325 18.475 11.5933 21.0767 20.4999 21.0767C29.4083 21.0767 37.1666 18.4733 37.1666 15.265V11.1983C33.1366 14.095 25.4916 14.9583 20.4999 14.9583Z"
@@ -293,7 +294,7 @@
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="Hypertext Preprocessor" itemprop="name">PHP</abbr></h4>
+                    <h4><abbr title="Hypertext Preprocessor" itemprop="name">PHP</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_407_1424)">
                             <path d="M11.6833 17.0116H10.11L9.25167 21.425H10.6483C11.575 21.425 12.265 21.25 12.7183 20.9016C13.1717 20.5516 13.4767 19.97 13.635 19.1533C13.7883 18.37 13.7183 17.8166 13.4283 17.495C13.1367 17.1733 12.5567 17.0116 11.6833 17.0116ZM20 9.47998C8.955 9.47998 0 14.19 0 20C0 25.81 8.955 30.5216 20 30.5216C31.045 30.5216 40 25.81 40 20C40 14.19 31.045 9.47998 20 9.47998ZM14.5667 21.8983C14.1317 22.315 13.6083 22.6283 13.0383 22.8166C12.4783 22.9966 11.7633 23.09 10.8967 23.09H8.92833L8.38333 25.8916H6.08667L8.13667 15.3483H12.5533C13.8817 15.3483 14.85 15.6966 15.46 16.395C16.07 17.0916 16.2533 18.065 16.01 19.315C15.9168 19.8096 15.7452 20.2862 15.5017 20.7266C15.2633 21.1516 14.9517 21.5433 14.5667 21.8983ZM21.2733 23.09L22.1783 18.425C22.2833 17.895 22.2433 17.5316 22.065 17.34C21.8867 17.1466 21.505 17.05 20.92 17.05H19.1L17.9267 23.0916H15.6467L17.6967 12.5466H19.975L19.43 15.35H21.46C22.7383 15.35 23.6183 15.5733 24.1033 16.0183C24.5883 16.4633 24.7333 17.185 24.5417 18.1833L23.5883 23.09H21.2733ZM33.935 19.315C33.8433 19.81 33.6716 20.2868 33.4267 20.7266C33.1883 21.1516 32.8767 21.5433 32.4917 21.8983C32.0564 22.3137 31.5344 22.6274 30.9633 22.8166C30.4033 22.9966 29.6883 23.09 28.82 23.09H26.8533L26.3083 25.8933H24.0117L26.0617 15.35H30.4767C31.805 15.35 32.7733 15.6983 33.3833 16.3966C33.9933 17.0916 34.1783 18.065 33.935 19.315ZM29.61 17.0116H28.0383L27.1783 21.425H28.575C29.5033 21.425 30.1933 21.25 30.645 20.9016C31.0983 20.5516 31.4033 19.97 31.5633 19.1533C31.7167 18.37 31.645 17.8166 31.355 17.495C31.065 17.1733 30.4817 17.0116 29.61 17.0116Z"
@@ -335,7 +336,7 @@
                 <div class="card__informations">
                     <small>Disponibilité flexible !</small>
                     <p>Je fais en sorte d’être disponible au maximum pour travailler avec vous&nbsp;!</p>
-                    <a href="#" title="Me contacter">Me contacter</a>
+                    <a href="#" title="Me contacter">Me Contacter</a>
                 </div>
             </div>
             <div class="card">
@@ -344,9 +345,9 @@
                           fill="black"/>
                 </svg>
                 <div class="card__informations">
-                    <small>Envie de collaborer avec moi ?</small>
+                    <small>Envie de collaborer avec moi&nbsp;?</small>
                     <p>Je suis prêt à collaborer afin de réaliser votre projet&nbsp;!</p>
-                    <a href="#" title="Me contacter">Me contacter</a>
+                    <a href="#" title="Me contacter">Me Contacter</a>
                 </div>
             </div>
         </section>
@@ -359,14 +360,13 @@
                         pratiques en matière de SEO.</p>
                     <div class="btn__container">
                         <a href="#second__engagement" title="Passer à l’engagement suivant"
-                           class="btn__medium filled__button">Voir l’engagement suivant</a>
+                           class="btn btn__medium filled__button">Voir l’engagement suivant</a>
                         <a href="#" title="En savoir plus sur l’optimisation et les performances d’un site internet"
-                           class="btn__medium filled__button">En savoir plus</a>
+                           class="btn btn__medium unfilled__button">En savoir plus</a>
                     </div>
                     <figure>
-                        <img src="./img/engagements/optimisation_200.jpg"
-                             alt="Illustration représentant l’optimisation en général. L’illustration contient des graphiques ainsi que des personnages qui travaillent."
-                             sizes="" srcset="">
+                        <img src="./img/engagements/optimisation.svg"
+                             alt="Illustration représentant l’optimisation en général. L’illustration contient des graphiques ainsi que des personnages qui travaillent.">
                     </figure>
                 </li>
                 <li class="engagement__item" id="second__engagement" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
@@ -375,14 +375,13 @@
                         situation de handicap d’utiliser votre site sans difficulté.</p>
                     <div class="btn__container">
                         <a href="#third__engagement" title="Passer à l’engagement suivant"
-                           class="btn__medium filled__button">Voir l’engagement suivant</a>
+                           class="btn btn__medium filled__button">Voir l’engagement suivant</a>
                         <a href="#" title="En savoir plus sur les normes d’accessibilité"
-                           class="btn__medium unfilled__button">En savoir plus</a>
+                           class="btn btn__medium unfilled__button">En savoir plus</a>
                     </div>
                     <figure>
-                        <img src="./img/engagements/accessibilite_200.jpg"
-                             alt="Illustration représentant l’accessibilité. On peut y retrouver un personnage atteinte d’un handicap moteur utilisant un ordinateur."
-                             sizes="" srcset="">
+                        <img src="./img/engagements/accessibilite.svg"
+                             alt="Illustration représentant l’accessibilité. On peut y retrouver un personnage atteinte d’un handicap moteur utilisant un ordinateur.">
                     </figure>
                 </li>
                 <li class="engagement__item" id="third__engagement" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
@@ -391,15 +390,14 @@
                         nouvelles pratiques associé à l’univers du web.</p>
                     <div class="btn__container">
                         <a href="#fourth__engagement" title="Passer à l’engagement suivant"
-                           class="btn__medium filled__button">Voir l’engagement suivant</a>
+                           class="btn btn__medium filled__button">Voir l’engagement suivant</a>
                         <a href="#" title="En savoir plus sur les bonnes pratiques"
-                           class="btn__medium unfilled__button">En
+                           class="btn btn__medium unfilled__button">En
                             savoir plus</a>
                     </div>
                     <figure>
-                        <img src="./img/engagements/code_quality_200.jpg"
-                             alt="Illustration représentant une analyse de code. On peut y retrouver un personnage réfléhissant à la manière dont il va écrire son code."
-                             sizes="" srcset="">
+                        <img src="./img/engagements/code_qualite.svg"
+                             alt="Illustration représentant une analyse de code. On peut y retrouver un personnage réfléhissant à la manière dont il va écrire son code.">
                     </figure>
                 </li>
                 <li class="engagement__item" id="fourth__engagement" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
@@ -407,14 +405,13 @@
                     <p itemprop="description">Mon objectif est de garantir un design cohérent, avec des informations claires et
                         compréhensibles,
                         tout en respectant les standards du web.</p>
-                    <div class="btn_container">
+                    <div class="btn__container">
                         <a href="#" title="En savoir plus sur les conventions du design"
-                           class="btn__medium unfilled__button">En savoir plus</a>
+                           class="btn btn__medium unfilled__button">En savoir plus</a>
                     </div>
                     <figure>
-                        <img src="./img/engagements/design_conventions_200.jpg"
-                             alt="Illustration représentant une liste de tâche accomplie. On peut y retrouver un personnage avec un crayon à côté d'une liste de tâche."
-                             sizes="" srcset="">
+                        <img src="./img/engagements/conventions_design.svg"
+                             alt="Illustration représentant une liste de tâche accomplie. On peut y retrouver un personnage avec un crayon à côté d'une liste de tâche.">
                     </figure>
                 </li>
             </ul>
@@ -422,19 +419,19 @@
     </article>
     <section class="second__main__section">
         <h3>Mon parcours scolaire</h3>
-        <ul class="school__carrer__list" itemprop="affiliation" itemscope itemtype="https://schema.org/EducationalOrganization">
-            <li class="school_carer__item">
+        <ul class="school__career__list" itemprop="affiliation" itemscope itemtype="https://schema.org/EducationalOrganization">
+            <li class="school__career__item">
                 <p>
                     <strong>
                         <time datetime="2024">2024</time>
-                        - Aujourd'hui&nbsp;:</strong> <span itemprop="name">Haute École de le Province de Liège</span>, Techniques infographique option web/multimedia<strong>(B2)</strong>.
+                        - Aujourd'hui&nbsp;:</strong> <span itemprop="name">Haute École de le Province de Liège</span>, Techniques infographique option web/multimedia <strong>(B2)</strong>.
                 </p>
                 <figure>
-                    <img src="./img/hepl_logo_130.png" sizes="" srcset=""
+                    <img src="./img/HEPL_logo.webp" sizes="" srcset=""
                          alt="Logo de la Haute École de la Province de Liège">
                 </figure>
             </li>
-            <li class="school_carer__container">
+            <li class="school__career__item">
                 <p>
                     <strong>
                         <time datetime="2023">2023</time>
@@ -445,11 +442,11 @@
                     infographique option web/multimedia <strong>(B1)</strong>.
                 </p>
                 <figure>
-                    <img src="./img/hepl_logo_130.png" sizes="" srcset=""
+                    <img src="./img/HEPL_logo.webp" sizes="" srcset=""
                          alt="Logo de la Haute École de la Province de Liège">
                 </figure>
             </li>
-            <li class="school__carer__item">
+            <li class="school__career__item">
                 <p>
                     <strong>
                         <time datetime="2017">2017</time>
@@ -459,13 +456,13 @@
                     naturelles/biotechniques.
                 </p>
                 <figure>
-                    <img src="./img/elcab_logo_130.png" alt="Logo de l'INDSE Bastogne" sizes="" srcset="">
+                    <img src="./img/INDSE_logo.webp" alt="Logo de l'INDSE Bastogne" sizes="" srcset="">
                 </figure>
             </li>
         </ul>
         <div class="btn__container">
-            <a href="#" title="Me contacter" class="btn__big filled__button">Me contacter</a>
-            <a href="#" title="En savoir plus sur moi" class="btn__big unfilled__button">En savoir plus sur moi</a>
+            <a href="#" title="Me contacter" class="btn btn__medium filled__button">Me contacter</a>
+            <a href="#" title="En savoir plus sur moi" class="btn btn__medium unfilled__button">En savoir plus sur moi</a>
         </div>
     </section>
     <section class="third__main__section">
@@ -733,7 +730,7 @@
             </li>
         </ul>
         <div class="btn__container">
-            <a href="#" title="Voir l'ensemble de mes outils de travail" class="btn__big filled__button">Voir tout mes
+            <a href="#" title="Voir l'ensemble de mes outils de travail" class="btn btn__medium filled__button">Voir tout mes
                 outils</a>
         </div>
     </section>
