@@ -926,7 +926,7 @@
     </section>
     <section class="fifth__main__section">
         <h3>Envie de me contacter&nbsp;?</h3>
-        <form method="post" action="#">
+        <form method="post" action="#" class="contact__form">
             <h4>Formulaire de contact</h4>
             <div class="form__field">
                 <label for="name">Nom complet *</label>
@@ -946,20 +946,21 @@
             <div class="form__field">
                 <label for="message">Message *</label>
                 <textarea name="message" id="message" placeholder="Taper votre message içi &hellip;"
-                          required></textarea>
+                          required cols="40" rows="10"></textarea>
             </div>
             <input type="submit" value="Envoyer">
         </form>
         <div class="contact__details__container">
             <h4>Mes coordonnées</h4>
-            <dl>
-                <dt>Mon numéro de téléphone&nbsp;:</dt>
-                <dd itemprop="telephone">0492 10 76 29</dd>
-            </dl>
-            <dl>
-                <dt>Mon adresse mail&nbsp;:</dt>
-                <dd itemprop="email">lorian.flamant85@gmail.com</dd>
-            </dl>
+            <div class="coordinate">
+                <dl>
+                    <dt>Mon numéro de téléphone&nbsp;:</dt>
+                    <dd itemprop="telephone">0492 10 76 29</dd>
+                </dl>
+                <dl>
+                    <dt>Mon adresse mail&nbsp;:</dt>
+                    <dd itemprop="email">lorian.flamant85@gmail.com</dd>
+            </div></dl>
         </div>
         <div class="end__message_section">
             <h3>Commençons à travailler ensemble&nbsp;!</h3>

@@ -1,11 +1,11 @@
 @import "../variables/variable";
 
-body {
+body, textarea{
   color: $black;
   font-family: 'Inter', Lato, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, dt{
   color: $green_3;
   font-family: 'Fields', Lato, georgia, serif;
   text-align: center;
@@ -77,8 +77,9 @@ h3 {
 
 .btn__container {
   display: flex;
+  flex-direction: column;
+  align-items: start;
   gap: 16px;
-  flex-wrap: wrap;
 
   .btn {
     color: $white;
@@ -281,26 +282,31 @@ h3 {
 
 .third__main__section{
   padding: 40px 30px;
+
+  h3{
+    color: $black;
+  }
 }
 
 .software__list{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
+  margin: 32px 0 48px;
 }
 
 .software__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px;
+  padding: 8px 12px;
   border: 1px solid $grey;
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(212, 253, 128, 100%);
 }
 
 .third__main__section .btn{
-  margin: 48px auto 0;
+  margin: auto;
 }
 
 .fourth__main__section{
@@ -353,12 +359,4 @@ h3 {
   font-size: 14px;
   line-height: 22px;
   font-weight: 700;
-}
-
-
-
-/*Temporaire*/
-
-header {
-  display: none;
 }
