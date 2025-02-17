@@ -303,6 +303,60 @@ h3 {
   margin: 48px auto 0;
 }
 
+.fourth__main__section{
+  background-color: $extra_light_green;
+  padding: 40px 30px;
+}
+
+.comment__list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: end;
+  gap: 16px;
+  overflow: scroll;
+  margin: 32px 0 48px;
+}
+
+.comment__item{
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  min-width: 225px;
+  padding: 24px;
+  border: 1px solid $grey;
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  .comment__user__informations{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.comment__user__informations>dl{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+
+  dd{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+.comment__item p, .comment__user__informations dt{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+
+
 /*Temporaire*/
 
 header {
