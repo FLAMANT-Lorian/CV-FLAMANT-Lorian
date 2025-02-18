@@ -1,10 +1,9 @@
 @import "../variables/variable";
 
 .fifth__main__section {
-  padding: 40px 30px 0;
-
   h3 {
     color: $black;
+    padding: 0 30px 0;
   }
 }
 
@@ -13,8 +12,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 32px 0;
   padding: 16px;
+  margin: 32px 30px;
   border: 1px solid $dark_grey;
   border-radius: 16px;
 
@@ -65,11 +64,16 @@ input[type="submit"] {
   border: none;
   border-radius: 100px;
   align-self: end;
+
+  &:hover {
+    background-color: $red-hover;
+  }
 }
 
 .contact__details__container {
   background-color: $extra_light_green;
   padding: 16px;
+  margin: 0 30px 40px;
   border: 1px solid $dark_grey;
   border-radius: 16px;
 
@@ -104,5 +108,20 @@ input[type="submit"] {
       line-height: 17px;
       font-weight: 400;
     }
+  }
+}
+
+.end__message_section {
+  background-image: url("/img/bg_form.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 80px 30px 40px;
+
+  .btn__container {
+    padding-top: 32px;
+  }
+
+  a {
+    margin: auto;
   }
 }
