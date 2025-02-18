@@ -19,7 +19,6 @@
     <nav class="nav__bar">
         <h2 class="sr-only">Navigation principale</h2>
         <a href="#contenu" class="sr-only nav__skipping">Allez directement au contenu principal</a>
-        <input type="checkbox" id="burger__menu">
         <label for="burger__menu">
             <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 2H22" stroke="#38312F" stroke-width="3" stroke-linecap="round"/>
@@ -27,6 +26,7 @@
                 <path d="M2 20H22" stroke="#38312F" stroke-width="3" stroke-linecap="round"/>
             </svg>
         </label>
+        <input type="checkbox" id="burger__menu">
         <ul class="first__label main__nav__list">
             <li class="main__nav__item">
                 À propos de moi
@@ -36,8 +36,7 @@
                         <ul class="submenu__level3__nav__list">
                             <li class="submenu__level3__nav__item">Site optimisé et performant</li>
                             <li class="submenu__level3__nav__item">Respect des normes d'accessibilité</li>
-                            <li class="submenu__level3__nav__item">Code de quilité respectant les bonnes pratiques
-                            </li>
+                            <li class="submenu__level3__nav__item">Code de qualité respectant les bonnes pratiques</li>
                             <li class="submenu__level3__nav__item">Respect des conventions du design</li>
                         </ul>
                     </li>
@@ -218,26 +217,30 @@
         <section class="first__section__article">
             <div class="home__container">
                 <h2 itemprop="name">Flamant Lorian, <span itemprop="jobTitle">Développeur web</span></h2>
-                <p itemprop="description">J’apprend les bonnes pratiques du web à la Haute École de la Province de Liège.</p>
-                <ul class="engagements__list">
-                    <li class="engagements__item">Site optimisé et performant</li>
-                    <li class="engagements__item">Respect des normes d’accessibilité</li>
-                    <li class="engagements__item">Code de qualité respectant les bonnes pratiques</li>
+                <p itemprop="description">J’apprend les bonnes pratiques du web à la Haute École de la Province de
+                    Liège.</p>
+                <ul class="engagements__list__home">
+                    <li class="engagements__item__home">Site optimisé et performant</li>
+                    <li class="engagements__item__home">Respect des normes d’accessibilité</li>
+                    <li class="engagements__item__home">Code de qualité respectant les bonnes pratiques</li>
                 </ul>
-                <a href="#" title="Me contacter" class="btn__small red__button">Me contacter</a>
+                <div class="btn__container">
+                    <a href="#" title="Me contacter" class="btn btn__small red__button">Me contacter</a>
+                </div>
             </div>
             <figure>
-                <img src="img/bureau/bureau_600.jpg"
-                     srcset="img/bureau/bureau_600.jpg 600w, img/bureau/bureau_450.jpg 450w, img/bureau/bureau_350.jpg 350w, img/bureau/bureau_300.jpg 300w"
+                <img src="img/bureau/bureau-600.webp"
+                     srcset="img/bureau/bureau_600.webp 600w, img/bureau/bureau_450.webp 450w, img/bureau/bureau_350.webp 350w, img/bureau/bureau_300.webp 300w"
                      sizes="(max-width: 400px) 300px, (max-width: 500px) 350px, (max-width: 800px) 450px, 600px"
                      alt="Photo de mon bureau">
             </figure>
         </section>
-        <section class="second__section__article" itemprop="knowsAbout" itemscope itemtype="https://schema.org/ComputerLanguage">
-            <h3 class="sr-only">Les langages que je maîtrise</h3>
+        <section class="second__section__article" itemprop="knowsAbout" itemscope
+                 itemtype="https://schema.org/ComputerLanguage">
+            <h3>Les langages que je maîtrise</h3>
             <ul class="languages__list">
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="Hypertext Markup Language" itemprop="name">HTML</abbr></h4>
+                    <h4><abbr title="Hypertext Markup Language" itemprop="name">HTML</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_407_1392)">
                             <path d="M38.019 0.399467C37.6998 0.0433067 37.2445 -0.159973 36.7674 -0.159973H4.23249C3.75537 -0.159973 3.30009 0.0433067 2.98089 0.399467C2.66169 0.755626 2.51049 1.23107 2.56257 1.70483L6.26193 35.0075C6.33585 35.6845 6.81465 36.2507 7.46985 36.4371L20.0362 40.0273C20.1874 40.071 20.3437 40.0928 20.4982 40.0928C20.6528 40.0928 20.809 40.071 20.9602 40.0273L33.5266 36.4371C34.1818 36.2507 34.659 35.6845 34.7346 35.0075L38.4356 1.70483C38.4894 1.23107 38.3382 0.755626 38.019 0.399467ZM29.9566 12.3224H14.9542L15.3104 16.593H29.5954L28.5236 29.2098L20.505 31.76L20.426 31.7348L12.4964 29.2064L12.063 24.0656H15.9471L16.1168 26.0631L20.547 27.0392L24.8998 26.0615L25.3618 20.6636H11.7706L10.719 8.24002H30.3061L29.9566 12.3224Z"
@@ -251,21 +254,21 @@
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="Cascading Style Sheet" itemprop="name">CSS</abbr></h4>
+                    <h4><abbr title="Cascading Style Sheet" itemprop="name">CSS</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.875 0.0499878L7.2 34.9625L20.5 39.95L33.8 34.9625L37.125 0.0499878H3.875ZM9.4145 5.03749H31.5595L31.1244 10.025L21.656 15.0125H25.6888H30.475H30.6796L29.8288 25.0005L29.8613 24.9875L29.4035 29.975L20.5 33.3L11.5803 29.975L11.0315 23.325H16.0548L16.3145 26.7052L20.5 28.1534L24.692 26.7344L25.2667 20H10.7425L10.3139 15.0125L20.1396 10.025H9.87558L9.4145 5.03749Z"
                               fill="black"/>
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="JavaScript" itemprop="name">JS</abbr></h4>
+                    <h4><abbr title="JavaScript" itemprop="name">JS</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M38.0167 0.408791C37.8525 0.229943 37.6218 0.127991 37.379 0.127991H3.62083C3.37805 0.127991 3.14736 0.229943 2.9832 0.408791C2.81904 0.587639 2.73869 0.827831 2.76029 1.06889L5.80157 35.1338C5.83354 35.4898 6.08151 35.7896 6.42538 35.8881L20.258 39.8392C20.3349 39.8608 20.4153 39.872 20.4948 39.872C20.5742 39.872 20.6546 39.8608 20.7315 39.8392L34.5762 35.8881C34.9201 35.7896 35.1681 35.4898 35.2 35.1338L38.2396 1.06889C38.2612 0.827831 38.18 0.587639 38.0167 0.408791ZM9.26794 23.4594L15.3159 25.1373V7.90399H18.7719V30.368L9.26794 27.7319V23.4594ZM31.7786 17.408L30.8679 27.992L22.2279 30.368V26.3927L28.0599 24.79L28.2759 21.55L22.2279 22.592V7.90399H32.5959L32.2979 11.36H25.6839V18.272L31.7786 17.408Z"
                               fill="black"/>
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only" itemprop="name">TypeScript</h4>
+                    <h4 itemprop="name">TypeScript</h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_407_1413)">
                             <path d="M39.0401 0.00799561H0.960057C0.433601 0.00799561 0.00805664 0.434492 0.00805664 0.959996V39.04C0.00805664 39.5655 0.433601 39.992 0.960057 39.992H39.0401C39.5665 39.992 39.9921 39.5655 39.9921 39.04V0.959996C39.9921 0.434492 39.5665 0.00799561 39.0401 0.00799561ZM23.8081 21.3756H19.0481V36.184H15.2401V21.3756H10.4801V18.096H23.8081V21.3756ZM24.8752 35.3386V31.3802C24.8752 31.3802 27.0372 33.01 29.6314 33.01C32.2256 33.01 32.1257 31.3136 32.1257 31.0813C32.1257 28.6194 24.7753 28.6194 24.7753 23.1654C24.7753 15.7484 35.4853 18.6748 35.4853 18.6748L35.352 22.201C35.352 22.201 33.5556 21.0034 31.5269 21.0034C29.4982 21.0034 28.7661 21.9678 28.7661 22.9988C28.7661 25.6596 36.1831 25.394 36.1831 30.749C36.1841 38.9972 24.8752 35.3386 24.8752 35.3386Z"
@@ -279,7 +282,7 @@
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="My Structured Query Language" itemprop="name">MySQL</abbr></h4>
+                    <h4><abbr title="My Structured Query Language" itemprop="name">MySQL</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_407_1420)">
                             <path d="M37.1666 30.0917V34.1883C37.1666 37.3967 29.4083 40 20.4999 40C11.5933 40 3.83325 37.3967 3.83325 34.1883V30.0917C7.86325 32.9883 15.5083 33.8517 20.4999 33.8517C25.5099 33.8517 33.1466 32.98 37.1666 30.0917ZM20.4999 24.41C15.4899 24.41 7.85325 23.5383 3.83325 20.65V24.7067C3.83325 27.9167 11.5933 30.5183 20.4999 30.5183C29.4083 30.5183 37.1666 27.915 37.1666 24.7067V20.65C33.1366 23.5467 25.4916 24.41 20.4999 24.41ZM20.4999 0C11.5933 0 3.83325 2.60333 3.83325 5.81333C3.83325 9.02333 11.5933 11.625 20.4999 11.625C29.4083 11.625 37.1666 9.02167 37.1666 5.81333C37.1666 2.60333 29.4083 0 20.4999 0ZM20.4999 14.9583C15.4899 14.9583 7.85325 14.0867 3.83325 11.1983V15.265C3.83325 18.475 11.5933 21.0767 20.4999 21.0767C29.4083 21.0767 37.1666 18.4733 37.1666 15.265V11.1983C33.1366 14.095 25.4916 14.9583 20.4999 14.9583Z"
@@ -293,7 +296,7 @@
                     </svg>
                 </li>
                 <li class="languages_item">
-                    <h4 class="sr-only"><abbr title="Hypertext Preprocessor" itemprop="name">PHP</abbr></h4>
+                    <h4><abbr title="Hypertext Preprocessor" itemprop="name">PHP</abbr></h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_407_1424)">
                             <path d="M11.6833 17.0116H10.11L9.25167 21.425H10.6483C11.575 21.425 12.265 21.25 12.7183 20.9016C13.1717 20.5516 13.4767 19.97 13.635 19.1533C13.7883 18.37 13.7183 17.8166 13.4283 17.495C13.1367 17.1733 12.5567 17.0116 11.6833 17.0116ZM20 9.47998C8.955 9.47998 0 14.19 0 20C0 25.81 8.955 30.5216 20 30.5216C31.045 30.5216 40 25.81 40 20C40 14.19 31.045 9.47998 20 9.47998ZM14.5667 21.8983C14.1317 22.315 13.6083 22.6283 13.0383 22.8166C12.4783 22.9966 11.7633 23.09 10.8967 23.09H8.92833L8.38333 25.8916H6.08667L8.13667 15.3483H12.5533C13.8817 15.3483 14.85 15.6966 15.46 16.395C16.07 17.0916 16.2533 18.065 16.01 19.315C15.9168 19.8096 15.7452 20.2862 15.5017 20.7266C15.2633 21.1516 14.9517 21.5433 14.5667 21.8983ZM21.2733 23.09L22.1783 18.425C22.2833 17.895 22.2433 17.5316 22.065 17.34C21.8867 17.1466 21.505 17.05 20.92 17.05H19.1L17.9267 23.0916H15.6467L17.6967 12.5466H19.975L19.43 15.35H21.46C22.7383 15.35 23.6183 15.5733 24.1033 16.0183C24.5883 16.4633 24.7333 17.185 24.5417 18.1833L23.5883 23.09H21.2733ZM33.935 19.315C33.8433 19.81 33.6716 20.2868 33.4267 20.7266C33.1883 21.1516 32.8767 21.5433 32.4917 21.8983C32.0564 22.3137 31.5344 22.6274 30.9633 22.8166C30.4033 22.9966 29.6883 23.09 28.82 23.09H26.8533L26.3083 25.8933H24.0117L26.0617 15.35H30.4767C31.805 15.35 32.7733 15.6983 33.3833 16.3966C33.9933 17.0916 34.1783 18.065 33.935 19.315ZM29.61 17.0116H28.0383L27.1783 21.425H28.575C29.5033 21.425 30.1933 21.25 30.645 20.9016C31.0983 20.5516 31.4033 19.97 31.5633 19.1533C31.7167 18.37 31.645 17.8166 31.355 17.495C31.065 17.1733 30.4817 17.0116 29.61 17.0116Z"
@@ -335,7 +338,7 @@
                 <div class="card__informations">
                     <small>Disponibilité flexible !</small>
                     <p>Je fais en sorte d’être disponible au maximum pour travailler avec vous&nbsp;!</p>
-                    <a href="#" title="Me contacter">Me contacter</a>
+                    <a href="#" title="Me contacter">Me Contacter</a>
                 </div>
             </div>
             <div class="card">
@@ -344,77 +347,81 @@
                           fill="black"/>
                 </svg>
                 <div class="card__informations">
-                    <small>Envie de collaborer avec moi ?</small>
+                    <small>Envie de collaborer avec moi&nbsp;?</small>
                     <p>Je suis prêt à collaborer afin de réaliser votre projet&nbsp;!</p>
-                    <a href="#" title="Me contacter">Me contacter</a>
+                    <a href="#" title="Me contacter">Me Contacter</a>
                 </div>
             </div>
         </section>
         <section class="fourth__section__article">
             <h3>Mes engagements</h3>
             <ul class="engagement__list">
-                <li class="engagement__item" id="first__engagement" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+                <li class="engagement__item" id="first__engagement" itemprop="knowsAbout" itemscope
+                    itemtype="https://schema.org/Thing">
                     <h4 itemprop="name">Site optimisé et performant</h4>
-                    <p itemprop="description">Je m'engage à optimiser votre site pour une navigation fluide tout en appliquant les meilleures
+                    <p itemprop="description">Je m'engage à optimiser votre site pour une navigation fluide tout en
+                        appliquant les meilleures
                         pratiques en matière de SEO.</p>
                     <div class="btn__container">
                         <a href="#second__engagement" title="Passer à l’engagement suivant"
-                           class="btn__medium filled__button">Voir l’engagement suivant</a>
+                           class="btn btn__medium filled__button">Voir l’engagement suivant</a>
                         <a href="#" title="En savoir plus sur l’optimisation et les performances d’un site internet"
-                           class="btn__medium filled__button">En savoir plus</a>
+                           class="btn btn__medium unfilled__button">En savoir plus</a>
                     </div>
                     <figure>
-                        <img src="./img/engagements/optimisation_200.jpg"
-                             alt="Illustration représentant l’optimisation en général. L’illustration contient des graphiques ainsi que des personnages qui travaillent."
-                             sizes="" srcset="">
+                        <img src="./img/engagements/optimisation.svg"
+                             alt="Illustration représentant l’optimisation en général. L’illustration contient des graphiques ainsi que des personnages qui travaillent.">
                     </figure>
                 </li>
-                <li class="engagement__item" id="second__engagement" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+                <li class="engagement__item" id="second__engagement" itemprop="knowsAbout" itemscope
+                    itemtype="https://schema.org/Thing">
                     <h4 itemprop="name">Respect des normes d’accessibilité</h4>
-                    <p itemprop="description">L'accessibilité est un point très important dans une site internet pour garantir aux personnes en
+                    <p itemprop="description">L'accessibilité est un point très important dans une site internet pour
+                        garantir aux personnes en
                         situation de handicap d’utiliser votre site sans difficulté.</p>
                     <div class="btn__container">
                         <a href="#third__engagement" title="Passer à l’engagement suivant"
-                           class="btn__medium filled__button">Voir l’engagement suivant</a>
+                           class="btn btn__medium filled__button">Voir l’engagement suivant</a>
                         <a href="#" title="En savoir plus sur les normes d’accessibilité"
-                           class="btn__medium unfilled__button">En savoir plus</a>
+                           class="btn btn__medium unfilled__button">En savoir plus</a>
                     </div>
                     <figure>
-                        <img src="./img/engagements/accessibilite_200.jpg"
-                             alt="Illustration représentant l’accessibilité. On peut y retrouver un personnage atteinte d’un handicap moteur utilisant un ordinateur."
-                             sizes="" srcset="">
+                        <img src="./img/engagements/accessibilite.svg"
+                             alt="Illustration représentant l’accessibilité. On peut y retrouver un personnage atteinte d’un handicap moteur utilisant un ordinateur.">
                     </figure>
                 </li>
-                <li class="engagement__item" id="third__engagement" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+                <li class="engagement__item" id="third__engagement" itemprop="knowsAbout" itemscope
+                    itemtype="https://schema.org/Thing">
                     <h4 itemprop="name">Code de qualité respectant les bonnes pratiques</h4>
-                    <p itemprop="description">Je veille à ce que le code de votre site soit le plus propre possible tout en respectant les
+                    <p itemprop="description">Je veille à ce que le code de votre site soit le plus propre possible tout
+                        en respectant les
                         nouvelles pratiques associé à l’univers du web.</p>
                     <div class="btn__container">
                         <a href="#fourth__engagement" title="Passer à l’engagement suivant"
-                           class="btn__medium filled__button">Voir l’engagement suivant</a>
+                           class="btn btn__medium filled__button">Voir l’engagement suivant</a>
                         <a href="#" title="En savoir plus sur les bonnes pratiques"
-                           class="btn__medium unfilled__button">En
+                           class="btn btn__medium unfilled__button">En
                             savoir plus</a>
                     </div>
                     <figure>
-                        <img src="./img/engagements/code_quality_200.jpg"
-                             alt="Illustration représentant une analyse de code. On peut y retrouver un personnage réfléhissant à la manière dont il va écrire son code."
-                             sizes="" srcset="">
+                        <img src="./img/engagements/code_qualite.svg"
+                             alt="Illustration représentant une analyse de code. On peut y retrouver un personnage réfléhissant à la manière dont il va écrire son code.">
                     </figure>
                 </li>
-                <li class="engagement__item" id="fourth__engagement" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+                <li class="engagement__item" id="fourth__engagement" itemprop="knowsAbout" itemscope
+                    itemtype="https://schema.org/Thing">
                     <h4 itemprop="name">Respect des conventions du Design</h4>
-                    <p itemprop="description">Mon objectif est de garantir un design cohérent, avec des informations claires et
+                    <p itemprop="description">Mon objectif est de garantir un design cohérent, avec des informations
+                        claires et
                         compréhensibles,
                         tout en respectant les standards du web.</p>
-                    <div class="btn_container">
+                    <div class="btn__container">
                         <a href="#" title="En savoir plus sur les conventions du design"
-                           class="btn__medium unfilled__button">En savoir plus</a>
+                           class="btn btn__medium unfilled__button">En savoir plus</a>
                     </div>
                     <figure>
-                        <img src="./img/engagements/design_conventions_200.jpg"
-                             alt="Illustration représentant une liste de tâche accomplie. On peut y retrouver un personnage avec un crayon à côté d'une liste de tâche."
-                             sizes="" srcset="">
+                        <img src="./img/engagements/conventions_design.svg"
+                             alt="Illustration représentant une liste de tâche accomplie. On peut y retrouver un personnage avec un crayon à côté d'une liste de tâche.">
                     </figure>
                 </li>
             </ul>
@@ -422,19 +429,21 @@
     </article>
     <section class="second__main__section">
         <h3>Mon parcours scolaire</h3>
-        <ul class="school__carrer__list" itemprop="affiliation" itemscope itemtype="https://schema.org/EducationalOrganization">
-            <li class="school_carer__item">
+        <ul class="school__career__list" itemprop="affiliation" itemscope
+            itemtype="https://schema.org/EducationalOrganization">
+            <li class="school__career__item">
                 <p>
                     <strong>
                         <time datetime="2024">2024</time>
-                        - Aujourd'hui&nbsp;:</strong> <span itemprop="name">Haute École de le Province de Liège</span>, Techniques infographique option web/multimedia<strong>(B2)</strong>.
+                        - Aujourd'hui&nbsp;:</strong> <span itemprop="name">Haute École de le Province de Liège</span>,
+                    Techniques infographique option web/multimedia <strong>(B2)</strong>.
                 </p>
                 <figure>
-                    <img src="./img/hepl_logo_130.png" sizes="" srcset=""
+                    <img src="./img/HEPL_logo.webp" sizes="" srcset=""
                          alt="Logo de la Haute École de la Province de Liège">
                 </figure>
             </li>
-            <li class="school_carer__container">
+            <li class="school__career__item">
                 <p>
                     <strong>
                         <time datetime="2023">2023</time>
@@ -445,11 +454,11 @@
                     infographique option web/multimedia <strong>(B1)</strong>.
                 </p>
                 <figure>
-                    <img src="./img/hepl_logo_130.png" sizes="" srcset=""
+                    <img src="./img/HEPL_logo.webp" sizes="" srcset=""
                          alt="Logo de la Haute École de la Province de Liège">
                 </figure>
             </li>
-            <li class="school__carer__item">
+            <li class="school__career__item">
                 <p>
                     <strong>
                         <time datetime="2017">2017</time>
@@ -459,13 +468,14 @@
                     naturelles/biotechniques.
                 </p>
                 <figure>
-                    <img src="./img/elcab_logo_130.png" alt="Logo de l'INDSE Bastogne" sizes="" srcset="">
+                    <img src="./img/INDSE_logo.webp" alt="Logo de l'INDSE Bastogne" sizes="" srcset="">
                 </figure>
             </li>
         </ul>
         <div class="btn__container">
-            <a href="#" title="Me contacter" class="btn__big filled__button">Me contacter</a>
-            <a href="#" title="En savoir plus sur moi" class="btn__big unfilled__button">En savoir plus sur moi</a>
+            <a href="#" title="Me contacter" class="btn btn__medium filled__button">Me contacter</a>
+            <a href="#" title="En savoir plus sur moi" class="btn btn__medium unfilled__button">En savoir plus sur
+                moi</a>
         </div>
     </section>
     <section class="third__main__section">
@@ -733,7 +743,8 @@
             </li>
         </ul>
         <div class="btn__container">
-            <a href="#" title="Voir l'ensemble de mes outils de travail" class="btn__big filled__button">Voir tout mes
+            <a href="#" title="Voir l'ensemble de mes outils de travail" class="btn btn__medium filled__button">Voir
+                tout mes
                 outils</a>
         </div>
     </section>
@@ -745,10 +756,15 @@
                     <p>Lorian a su parfaitement capturer ma vision et la transformer en un site magnifique. Son souci du
                         détail et sa compréhension de mes besoins m'ont vraiment impressionnée. Travail impeccable&nbsp;!</p>
                 </blockquote>
-                <dl>
-                    <dt>Camille Dupont</dt>
-                    <dd>Graphiste</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Camille Dupont</dt>
+                        <dd>Graphiste</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
@@ -756,20 +772,30 @@
                         beaucoup de professionnalisme tout au long du projet, et il m’a également conseillé sur des
                         aspects que je n’aurais jamais envisagés. Je suis vraiment satisfait du résultat&nbsp;!</p>
                 </blockquote>
-                <dl>
-                    <dt>Marc Lemoine</dt>
-                    <dd>Restaurateur</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Marc Lemoine</dt>
+                        <dd>Restaurateur</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
                     <p>Une excellente collaboration&nbsp;! Lorian a créé un site simple et efficace, qui reflète
                         exactement ma vision.</p>
                 </blockquote>
-                <dl>
-                    <dt>Sophie Martin</dt>
-                    <dd>Coach de vie</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Sophie Martin</dt>
+                        <dd>Coach de vie</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
@@ -777,20 +803,30 @@
                         adapté à mes photos. Grâce à lui, mes clients me trouvent plus facilement, et les retours sont
                         très positifs. Merci pour ton talent&nbsp;!</p>
                 </blockquote>
-                <dl>
-                    <dt>Théo Girard</dt>
-                    <dd>Photographe</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Théo Girard</dt>
+                        <dd>Photographe</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
                     <p>Je suis ravie de mon nouveau site&nbsp;! Lorian a su capter mon univers artistique et le
                         retranscrire à la perfection. Je recommande vivement ses services&nbsp;!</p>
                 </blockquote>
-                <dl>
-                    <dt>Amélie Fournier</dt>
-                    <dd>Illustratrice</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Amélie Fournier</dt>
+                        <dd>Illustratrice</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
@@ -798,20 +834,30 @@
                         a aussi pris le temps de m'expliquer comment le gérer au quotidien. Son expertise est un
                         véritable atout pour mon activité.</p>
                 </blockquote>
-                <dl>
-                    <dt>Paul Brunet</dt>
-                    <dd>Consultant</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Paul Brunet</dt>
+                        <dd>Consultant</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
                     <p>Un travail rapide et efficace, avec un design qui reflète parfaitement l'esprit de ma
                         boutique.</p>
                 </blockquote>
-                <dl>
-                    <dt>Émilie Roche</dt>
-                    <dd>Fleuriste</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Émilie Roche</dt>
+                        <dd>Fleuriste</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
@@ -820,19 +866,29 @@
                         fonctionnalités supplémentaires que je n’avais pas envisagées mais qui s’avèrent très utiles.
                         Une prestation au top&nbsp;!</p>
                 </blockquote>
-                <dl>
-                    <dt>Antoine Lefèbre</dt>
-                    <dd>Musicien</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Antoine Lefèbre</dt>
+                        <dd>Musicien</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
                     <p>Un travail soigné et à l’écoute. Mon site est beau et parfaitement fonctionnel.</p>
                 </blockquote>
-                <dl>
-                    <dt>Chloé Bertrand</dt>
-                    <dd>Rédactrice</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Chloé Bertrand</dt>
+                        <dd>Rédactrice</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
@@ -840,19 +896,29 @@
                         qui m’a permis d’attirer de nombreux nouveaux clients. Il a également été disponible pour
                         répondre à mes questions après la livraison. Je ne peux que le recommander vivement&nbsp;!</p>
                 </blockquote>
-                <dl>
-                    <dt>Lucas Perrot</dt>
-                    <dd>Propriétaire de gîte</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Lucas Perrot</dt>
+                        <dd>Propriétaire de gîte</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
                     <p>Le site est simple, beau et correspond exactement à mes attentes. Merci&nbsp;!</p>
                 </blockquote>
-                <dl>
-                    <dt>Juliette Caron</dt>
-                    <dd>Esthéticienne</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Juliette Caron</dt>
+                        <dd>Esthéticienne</dd>
+                    </dl>
+                </div>
             </li>
             <li class="comment__item">
                 <blockquote>
@@ -860,16 +926,21 @@
                         le design et les performances du site qu’il a réalisé sont irréprochables. Collaborer avec lui a
                         été un réel plaisir&nbsp;!</p>
                 </blockquote>
-                <dl>
-                    <dt>Nathan Moreau</dt>
-                    <dd>Développeur junior</dd>
-                </dl>
+                <div class="comment__user__informations">
+                    <figure>
+                        <img src="/img/user.svg" alt="Icone d'utilisateur">
+                    </figure>
+                    <dl>
+                        <dt>Nathan Moreau</dt>
+                        <dd>Développeur junior</dd>
+                    </dl>
+                </div>
             </li>
         </ul>
     </section>
     <section class="fifth__main__section">
         <h3>Envie de me contacter&nbsp;?</h3>
-        <form method="post" action="#">
+        <form method="post" action="#" class="contact__form">
             <h4>Formulaire de contact</h4>
             <div class="form__field">
                 <label for="name">Nom complet *</label>
@@ -889,25 +960,27 @@
             <div class="form__field">
                 <label for="message">Message *</label>
                 <textarea name="message" id="message" placeholder="Taper votre message içi &hellip;"
-                          required></textarea>
+                          required cols="40" rows="10"></textarea>
             </div>
             <input type="submit" value="Envoyer">
         </form>
         <div class="contact__details__container">
             <h4>Mes coordonnées</h4>
-            <dl>
-                <dt>Mon numéro de téléphone&nbsp;:</dt>
-                <dd itemprop="telephone">0492 10 76 29</dd>
-            </dl>
-            <dl>
-                <dt>Mon adresse mail&nbsp;:</dt>
-                <dd itemprop="email">lorian.flamant85@gmail.com</dd>
-            </dl>
+            <div class="coordinate">
+                <dl>
+                    <dt>Mon numéro de téléphone&nbsp;:</dt>
+                    <dd itemprop="telephone">0492 10 76 29</dd>
+                </dl>
+                <dl>
+                    <dt>Mon adresse mail&nbsp;:</dt>
+                    <dd itemprop="email">lorian.flamant85@gmail.com</dd>
+                </dl>
+            </div>
         </div>
         <div class="end__message_section">
             <h3>Commençons à travailler ensemble&nbsp;!</h3>
             <div class="btn__container">
-                <a href="#" title="Me contacter" class="btn__big filled__button">me contacter</a>
+                <a href="#" title="Me contacter" class="btn btn__medium filled__button">me contacter</a>
             </div>
         </div>
     </section>
@@ -976,7 +1049,7 @@
         <h3 class="sr-only">Mes réseaux sociaux</h3>
         <ul class="social__media__list">
             <li class="social__media__item">
-                <h4 itemprop="sameAs">Facebook</h4>
+                <h4 itemprop="sameAs" class="sr-only">Facebook</h4>
                 <a href="#" title="Visiter mon profil Facebook">
                     <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.5599 18.6966H15.7103V11.9999H14.2856V9.69166H15.7103V8.30618C15.7103 6.4234 16.5142 5.30371 18.7983 5.30371H20.7005V7.61191H19.512C18.6227 7.61191 18.5636 7.93453 18.5636 8.53631L18.5599 9.69166H20.7142L20.462 11.9999H18.5599V18.6966Z"
@@ -985,7 +1058,7 @@
                 </a>
             </li>
             <li class="social__media__item">
-                <h4 itemprop="sameAs">X</h4>
+                <h4 itemprop="sameAs" class="sr-only">X</h4>
                 <a href="#" title="Visiter mon profil X">
                     <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.416 11.2343L22.0009 7H21.1514L18.0387 10.6766L15.5525 7H12.6851L16.4446 12.5596L12.6851 17H13.5346L16.8218 13.1174L19.4473 17H22.3148L18.416 11.2343ZM13.8407 7.6498H15.1455L21.1517 16.3797H19.8469L13.8407 7.6498Z"
@@ -994,7 +1067,7 @@
                 </a>
             </li>
             <li class="social__media__item">
-                <h4 itemprop="sameAs">Instagram</h4>
+                <h4 itemprop="sameAs" class="sr-only">Instagram</h4>
                 <a href="#" title="Visiter mon profil Instagram">
                     <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.5001 5.83936C19.1732 5.83936 19.383 5.84645 20.0401 5.87643C20.6959 5.90636 21.1437 6.01049 21.5356 6.1628C21.9407 6.32024 22.2843 6.53089 22.6268 6.87339C22.9692 7.21588 23.1799 7.55945 23.3373 7.96457C23.4896 8.35646 23.5938 8.80428 23.6237 9.46004C23.6537 10.1171 23.6608 10.3269 23.6608 12.0001C23.6608 13.6732 23.6537 13.883 23.6237 14.5401C23.5938 15.1959 23.4896 15.6437 23.3373 16.0356C23.1799 16.4407 22.9692 16.7843 22.6268 17.1268C22.2843 17.4693 21.9407 17.6799 21.5356 17.8374C21.1437 17.9897 20.6959 18.0938 20.0401 18.1237C19.383 18.1537 19.1732 18.1608 17.5001 18.1608C15.8269 18.1608 15.6171 18.1537 14.96 18.1237C14.3043 18.0938 13.8564 17.9897 13.4645 17.8374C13.0594 17.6799 12.7159 17.4693 12.3734 17.1268C12.0309 16.7843 11.8202 16.4407 11.6628 16.0356C11.5105 15.6437 11.4063 15.1959 11.3764 14.5401C11.3464 13.883 11.3394 13.6732 11.3394 12.0001C11.3394 10.3269 11.3464 10.1171 11.3764 9.46004C11.4063 8.80428 11.5105 8.35646 11.6628 7.96457C11.8202 7.55945 12.0309 7.21588 12.3734 6.87339C12.7159 6.53089 13.0594 6.32024 13.4645 6.1628C13.8564 6.01049 14.3043 5.90636 14.96 5.87643C15.6171 5.84645 15.8269 5.83936 17.5001 5.83936ZM17.5001 6.94942C15.8551 6.94942 15.6602 6.95568 15.0106 6.98532C14.4099 7.01273 14.0837 7.11309 13.8667 7.19744C13.5791 7.3092 13.3738 7.44272 13.1583 7.65829C12.9427 7.87386 12.8092 8.07911 12.6974 8.36666C12.6131 8.58377 12.5127 8.90997 12.4853 9.51064C12.4557 10.1603 12.4494 10.3551 12.4494 12.0001C12.4494 13.6451 12.4557 13.8399 12.4853 14.4896C12.5127 15.0902 12.6131 15.4164 12.6974 15.6335C12.8092 15.921 12.9427 16.1263 13.1583 16.3419C13.3738 16.5574 13.5791 16.691 13.8667 16.8027C14.0837 16.8871 14.4099 16.9874 15.0106 17.0148C15.6601 17.0445 15.855 17.0507 17.5001 17.0507C19.1451 17.0507 19.34 17.0445 19.9895 17.0148C20.5902 16.9874 20.9164 16.8871 21.1335 16.8027C21.421 16.691 21.6263 16.5574 21.8418 16.3419C22.0574 16.1263 22.1909 15.921 22.3027 15.6335C22.387 15.4164 22.4874 15.0902 22.5148 14.4895C22.5445 13.8399 22.5507 13.6451 22.5507 12.0001C22.5507 10.3551 22.5445 10.1603 22.5148 9.51061C22.4874 8.90997 22.387 8.58377 22.3027 8.36666C22.1909 8.07911 22.0574 7.87386 21.8418 7.65829C21.6263 7.44272 21.421 7.3092 21.1335 7.19744C20.9164 7.11309 20.5902 7.01273 19.9895 6.98532C19.3399 6.95568 19.145 6.94942 17.5001 6.94942ZM17.5007 8.68366C19.3326 8.68366 20.8177 10.1687 20.8177 12.0007C20.8177 13.8326 19.3326 15.3177 17.5007 15.3177C15.6687 15.3177 14.1837 13.8326 14.1837 12.0007C14.1837 10.1687 15.6687 8.68366 17.5007 8.68366ZM17.5007 14.1538C18.6898 14.1538 19.6538 13.1898 19.6538 12.0007C19.6538 10.8115 18.6898 9.84752 17.5007 9.84752C16.3115 9.84752 15.3475 10.8115 15.3475 12.0007C15.3475 13.1898 16.3115 14.1538 17.5007 14.1538ZM21.3508 8.47483C21.3508 8.88313 21.0199 9.21413 20.6116 9.21413C20.2033 9.21413 19.8723 8.88313 19.8723 8.47483C19.8723 8.06653 20.2033 7.73556 20.6116 7.73556C21.0199 7.73556 21.3508 8.06653 21.3508 8.47483Z"
@@ -1003,7 +1076,7 @@
                 </a>
             </li>
             <li class="social__media__item">
-                <h4 itemprop="sameAs">LinkedIn</h4>
+                <h4 itemprop="sameAs" class="sr-only">LinkedIn</h4>
                 <a href="#" title="Visiter mon profil LinkedIn">
                     <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24.1963 18.6966H21.4218V14.3465C21.4218 13.3087 21.4036 11.9741 19.9794 11.9741C18.535 11.9741 18.3152 13.1051 18.3152 14.272V18.6966H15.5432V9.75064H18.2034V10.9738H18.2413C18.6114 10.2703 19.5174 9.52881 20.8677 9.52881C23.6771 9.52881 24.1963 11.381 24.1963 13.7904V18.6966ZM12.4137 8.52851C11.5223 8.52851 10.8035 7.80628 10.8035 6.91585C10.8035 6.02595 11.5223 5.30371 12.4137 5.30371C13.3015 5.30371 14.0224 6.02595 14.0224 6.91585C14.0224 7.80628 13.3015 8.52851 12.4137 8.52851ZM11.0244 18.6966V9.75064H13.802V18.6966H11.0244Z"
@@ -1012,7 +1085,7 @@
                 </a>
             </li>
             <li class="social__media__item">
-                <h4 itemprop="sameAs">Youtube</h4>
+                <h4 itemprop="sameAs" class="sr-only">Youtube</h4>
                 <a href="#" title="Visiter mon profil Youtube">
                     <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.8932 13.8749L15.8928 9.58922L19.6428 11.7395L15.8932 13.8749ZM24.3249 9.10627C24.3249 9.10627 24.1887 8.10908 23.7713 7.66996C23.2415 7.09335 22.6478 7.09064 22.3758 7.05717C20.4267 6.91064 17.503 6.91064 17.503 6.91064H17.4969C17.4969 6.91064 14.5732 6.91064 12.6241 7.05717C12.3516 7.09064 11.7583 7.09335 11.2282 7.66996C10.8107 8.10908 10.6749 9.10627 10.6749 9.10627C10.6749 9.10627 10.5356 10.2776 10.5356 11.4484V12.5465C10.5356 13.7178 10.6749 14.8886 10.6749 14.8886C10.6749 14.8886 10.8107 15.8858 11.2282 16.3249C11.7583 16.9015 12.4543 16.8834 12.7642 16.9436C13.8785 17.0548 17.4999 17.0892 17.4999 17.0892C17.4999 17.0892 20.4267 17.0847 22.3758 16.9382C22.6478 16.9042 23.2415 16.9015 23.7713 16.3249C24.1887 15.8858 24.3249 14.8886 24.3249 14.8886C24.3249 14.8886 24.4642 13.7178 24.4642 12.5465V11.4484C24.4642 10.2776 24.3249 9.10627 24.3249 9.10627Z"

@@ -1,0 +1,127 @@
+@import "../variables/variable";
+
+.fifth__main__section {
+  h3 {
+    color: $black;
+    padding: 0 30px 0;
+  }
+}
+
+.contact__form {
+  background-color: $extra_light_green;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  margin: 32px 30px;
+  border: 1px solid $dark_grey;
+  border-radius: 16px;
+
+  h4 {
+    color: $black;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-bottom: 8px;
+  }
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    font-family: 'Fields', Lato, georgia, serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  input, textarea {
+    color: $light_grey;
+    background-color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 16px;
+    border: 1px solid $dark_grey;
+    border-radius: 8px;
+  }
+}
+
+textarea {
+  max-height: 100px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: $red;
+  color: $white;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 100px;
+  align-self: end;
+
+  &:hover {
+    background-color: $red-hover;
+  }
+}
+
+.contact__details__container {
+  background-color: $extra_light_green;
+  padding: 16px;
+  margin: 0 30px 40px;
+  border: 1px solid $dark_grey;
+  border-radius: 16px;
+
+  h4 {
+    color: $black;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-bottom: 24px;
+  }
+}
+
+.coordinate {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  dl {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    dt {
+      color: $black;
+      text-align: left;
+      line-height: 21px;
+      font-weight: 800;
+    }
+
+    dd {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+    }
+  }
+}
+
+.end__message_section {
+  background-image: url("/img/bg_form.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 80px 30px 40px;
+
+  .btn__container {
+    padding-top: 32px;
+  }
+
+  a {
+    margin: auto;
+  }
+}
